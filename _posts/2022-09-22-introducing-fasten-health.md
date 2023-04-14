@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: true
+cover: 'assets/images/abby-anaday-Z3fXPuxa15k-unsplash.jpg'
 navigation: true
 title: 'Fasten Health: An Open-Source, Self-Hosted, Personal Electronic Health Record'
 date: 2022-09-22 10:18:00
