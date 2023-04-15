@@ -1,0 +1,41 @@
+---
+layout: post
+cover: 'assets/images/cover1.jpg'
+navigation: true
+title: 'Fasten Health: March 2023 Update'
+date: 2023-03-15 10:18:00
+tags: updates
+subclass: 'post tag-fiction'
+author: jason-kulatunga
+---
+
+Fasten Health, the open-source personal/family electronic medical record aggregator, has made significant
+strides in the past month. The team has been working tirelessly to bring you new and improved features 
+that make the platform even more useful for you and your family's healthcare needs.
+
+The most notable update is the expansion of the Fasten Health network. The platform now supports almost 
+6000 healthcare institutions, with thousands more on the way. This means you can connect your personal 
+accounts and import your own electronic medical records from a vast array of sources. If you're just 
+testing out the platform, you can continue to use Sandbox credentials, full of synthetically created test data.
+
+Another exciting new feature is the ability to manually enter your medical records using our helpful 
+form. This includes information about your conditions, medications, practitioners, locations/organizations, 
+surgeries/procedures, and more. For patients in the US, these fields support auto-complete using data from 
+National Practitioners Database (Locations/Practitioners/Organizations), National Library of Medicine 
+(Medication and Procedures), and Centers for Medicare & Medicaid Services (Conditions).
+
+In addition, Fasten Health has added branding logos and homepages for many sources, making it easier 
+to recognize your provider. The platform's provider search feature has also been enhanced, adding pagination, 
+full text search, and filtering by tags (coming soon).
+
+The team is continually working on further improvements to Fasten Health, and the next few months 
+promise to be even more exciting. Uploading documentation (PDFs, notes, etc.) and medical imaging 
+results (DICOM) are coming soon.
+
+Fasten Health is committed to delivering an open-source, self-hosted personal/family electronic 
+medical record aggregator designed to integrate with thousands of insurances/hospitals/clinics. 
+We believe that healthcare should be accessible to everyone, and Fasten Health is our way of 
+contributing to that vision.
+
+If you haven't tried Fasten Health yet, what are you waiting for? [Sign Up Now](https://forms.gle/SNsYX9BNMXB6TuTw6) and take control 
+of your healthcare.
