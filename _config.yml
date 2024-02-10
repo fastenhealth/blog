@@ -1,20 +1,22 @@
-# Jekyll configuration
-#markdown: redcarpet
-#highlighter: pygments
-markdown: kramdown
-highlighter: rouge
-paginate: 15
-language: 'en-us'
 
 # Website info
 name: 'Fasten Health Blog'
 description: "Fasten securely connects your healthcare providers together, creating a personal health record that never leaves your hands"
+logo: 'assets/images/banner.png'
+favicon: 'assets/images/favicon.ico'
+port                : 4000
+host                : 127.0.0.1
+baseurl: ''
+disqus: 'fastenhealth'
+email: 'hello@fastenhealth.com'
+mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 
 short_url: 'blog.fastenhealth.com'
 #google_analytics: UA-69281367-1
 #disqus: username
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /
+
+include: ["_pages"]
 
 # Permalinks
 permalink: /:title
@@ -25,6 +27,46 @@ permalink: /:title
 plugins:
   - jekyll-paginate
   - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+
+
+authors:
+  jason:
+    name:           Jason Kulatunga
+    site:           https://www.fastenhealth.com
+    avatar:         assets/images/jason-avatar.png
+    bio:            "Hi, I am Jason Kulatunga, the founder of Fasten Health"
+    email:          jason@fastenhealth.com
+    twitter:        https://twitter.com/fastenhealth
+    linkedin:      https://www.linkedin.com/in/jason-kulatunga/
+
+
+
+defaults:
+
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: jason
+      avatar: assets/images/jason-avatar.png
+
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+
+# Jekyll configuration
+#markdown: redcarpet
+#highlighter: pygments
+markdown: kramdown
+highlighter: rouge
+paginate: 15
+language: 'en-us'
 
 # Additional settings available on the front-matter
 # Site logo in the index.html (as in demo.ghost.io)
@@ -50,8 +92,8 @@ lsi: false
 username: fastenhealth
 repo: blog
 branch: main
-relative_source: ../jasper/
-destination: ../jasper-pages/
+#relative_source: ../jasper/
+#destination: ../jasper-pages/
 production_url:  https://blog.fastenhealth.com/
 source_url:  https://github.com/fastenhealth/blog/
 
@@ -66,7 +108,6 @@ exclude:
   - .travis.yml
   - node_modules
   - .git
-
 
 
 #logo: banner-transparent.png
