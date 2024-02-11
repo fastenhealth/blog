@@ -9,7 +9,6 @@ host                : 127.0.0.1
 baseurl: ''
 disqus: 'fastenhealth'
 email: 'hello@fastenhealth.com'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 
 short_url: 'blog.fastenhealth.com'
 #google_analytics: UA-69281367-1
@@ -65,7 +64,7 @@ defaults:
 #highlighter: pygments
 markdown: kramdown
 highlighter: rouge
-paginate: 15
+paginate: 5
 language: 'en-us'
 
 # Additional settings available on the front-matter

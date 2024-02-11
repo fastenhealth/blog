@@ -803,3 +803,10 @@ div.a2a_full_footer {display:none;}
 		 height:280px !Important;
 	 }
  }
+
+.bg-lightpurple {
+	background-color:#f3ebff;
+}
+.ml-form-embedBody {
+	padding: 0 !important;
+}
