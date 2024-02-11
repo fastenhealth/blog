@@ -1,139 +1,140 @@
 ---
 layout: default
-disqus: false
-class: 'post-template'
 ---
-<!-- default -->
-
-<!-- The comment above "< default" means - insert everything in this file into -->
-    <!-- the [body] of the default.hbs template, which contains our header/footer. -->
-
-<!-- Everything inside the #post tags pulls data from the post -->
-<!-- #post -->
-
-<header class="main-header post-head {% if page.cover %}" style="background-image: url({{ site.baseurl }}{{ page.cover }}) {% else %}no-cover{% endif %}">
-    <nav class="main-nav {% if page.cover %} overlay {% endif %} clearfix">
-        {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
-        {% if page.navigation %}
-            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-        {% endif %}
-    </nav>
-</header>
-
-<main class="content" role="main">
-
-    <article class="{{ page.subclass }}">
-
-        <header class="post-header">
-            <h1 class="post-title">{{ page.title }}</h1>
-            <section class="post-meta">
-            <!-- <a href='{{ site.baseurl }}{{ page.about }}'>{{ site.author }}</a> -->
-
-            {% for author in site.data.authors %}
-                {% if author[1].username == page.author %}
-                    <a href='{{ site.baseurl }}author/{{ page.author }}'>{{ author[1].name }}</a>
-                {% endif %}
-            {% endfor %}
-            <time class="post-date" datetime="{{ page.date | date:'%Y-%m-%d' }}">{{ page.date | date_to_string }}</time>
-                <!-- [[tags prefix=" on "]] -->
-                {% if page.tags.size > 0 %}
-                on
-                {% for tag in page.tags %}
-                    {% if forloop.index == page.tags.size %}
-                       <a href='{{ site.baseurl }}tag/{{ tag }}'>{{ tag | capitalize }}</a>
-                    {% else %}
-                       <a href='{{ site.baseurl }}tag/{{ tag }}'>{{ tag | capitalize }}</a>,
-                    {% endif %}
-                {% endfor %}
-                {% endif %}
-            </section>
-        </header>
-
-        <section class="post-content">
-
-            {{ content }}
-
-        </section>
-
-        <footer class="post-footer">
-
-            <!-- Everything inside the #author tags pulls data from the author -->
-            <!-- #author-->
-            {% for author in site.data.authors %}
-                {% if author[1].username == page.author %}
-                    {% if author[1].assets %}
-                        <figure class="author-image">
-                            <a class="img" href="{{ site.baseurl }}author/{{ page.author }}" style="background-image: url({{ site.baseurl }}{{ author[1].assets }})"><span class="hidden">{{ page.author }}'s Picture</span></a>
-                        </figure>
-                    {% endif %}
-
-                    <section class="author">
-                        <h4><a href="{{ site.baseurl }}author/{{ page.author }}">{{ author[1].name }}</a></h4>
-
-                        {% if author[1].bio %}
-                            <p> {{ author[1].bio }}</p>
-                        {% else %}
-                            <p>Read <a href="{{ site.baseurl }}author/{{ page.author }}">more posts</a> by this author.</p>
+{% assign author = site.authors[page.author] %}
+<div class="container">
+<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+		<div class="h-100 tofront">
+			<div class="row {% if page.image %} justify-content-between {% else %} justify-content-center {% endif %}">
+				<div class="{% if page.image %} col-md-6 {% else %} col-md-8 {% endif %} pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+					<p class="text-uppercase font-weight-bold">
+                        <span class="catlist">
+						{% for category in page.categories %}
+                          <a class="sscroll text-danger" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category | downcase }}</a><span class="sep">, </span>
+                        {% endfor %}
+                        </span>
+					</p>
+					<h1 class="display-4 mb-4 article-headline">{{ page.title }}</h1>
+					<div class="d-flex align-items-center">
+                        {% if author.avatar %}
+                        <img class="rounded-circle" src="{{site.baseurl}}/{{author.avatar}}" alt="{{author.name}}" width="70"/>
                         {% endif %}
-                        <div class="author-meta">
-                            {% if author[1].location %}<span class="author-location icon-location"> {{ author[1].location }}</span>{% endif %}
-                            {% if author[1].url %}<span class="author-link icon-link"><a href="{{ author[1].url_full }}"> {{ author[1].url }}</a></span>{% endif %}
-                        </div>
-                    </section>
-
-                    <!-- /author  -->
-
-                    <section class="share">
-                        <h4>Share this post</h4>
-                        <a class="icon-twitter" href="http://twitter.com/share?text={{ page.title }}&amp;url={{ site.url }}{{ page.url | remove: '/' }}"
-                            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                            <span class="hidden">Twitter</span>
-                        </a>
-                        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url | remove: '/' }}"
-                            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                            <span class="hidden">Facebook</span>
-                        </a>
-                        <a class="icon-google-plus" href="https://plus.google.com/share?url={{ site.url }}{{ page.url | remove: '/' }}"
-                           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                            <span class="hidden">Google+</span>
-                        </a>
-                    </section>
+						<small class="ml-3"> {{ author.name }} <span><a target="_blank" href="{{ author.twitter }}" class="btn btn-outline-secondary btn-sm btn-round ml-1">Follow</a></span>
+                            <span class="text-muted d-block mt-1">{{ page.date | date: '%b %d, %Y' }} · {% include meta-read-time.html %}</span>
+						</small>
+					</div>
+				</div>
+                {% if page.image %}
+				<div class="col-md-6 pr-0 align-self-center">
+					<img class="rounded" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+				</div>
                 {% endif %}
-            {% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
 
-            <!-- Add Disqus Comments -->
-            {% if page.disqus %}
-                {% include disqus.html %}
+
+
+
+
+<div class="container-lg pt-4 pb-4">
+	<div class="row justify-content-center">
+
+
+        <!-- Share -->
+		<div class="col-lg-2 pr-4 mb-4 col-md-12">
+			<div class="sticky-top sticky-top-offset text-center">
+				<div class="text-muted">
+					Share this
+				</div>
+				<div class="share d-inline-block">
+					<!-- AddToAny BEGIN -->
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+						<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+						<a class="a2a_button_facebook"></a>
+						<a class="a2a_button_twitter"></a>
+					</div>
+					<script async src="https://static.addtoany.com/menu/page.js"></script>
+					<!-- AddToAny END -->
+				</div>
+			</div>
+		</div>
+
+
+		<div class="col-md-12 col-lg-8">
+
+            <!-- Article -->
+			<article class="article-post">
+			{{ content }}
+			</article>
+
+			<!-- Tags -->
+			<div class="mb-4">
+				<span class="taglist">
+				{% for tag in page.tags %}
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag | downcase }}</a>
+				{% endfor %}
+				</span>
+			</div>
+
+            <!-- Mailerlite Subscribe Form -->
+
+			<div class="border p-5 bg-lightpurple">
+				<div class="row justify-content-between">
+					<div class="col-md-6 mb-2 mb-md-0">
+						<h5 class="font-weight-bold">Join Newsletter</h5>
+						 Get the latest news right in your inbox. We never spam!
+					</div>
+					<div class="col-md-6">
+						<div class="row">
+							<div class="ml-embedded w-100" data-form="D2Vjzt"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+             <!-- Author Box -->
+                {% if page.author %}
+				<div class="row mt-5">
+					<div class="col-md-2 align-self-center">
+                         {% if author.avatar %}
+                        <img class="rounded-circle" src="{{site.baseurl}}/{{author.avatar}}" alt="{{author.name}}" width="90"/>
+                        {% endif %}
+					</div>
+					<div class="col-md-10">
+                        <h5 class="font-weight-bold">Written by {{ author.name }} {% if author.twitter %}<span><a target="_blank" href="{{ author.twitter }}" class="btn btn-outline-secondary btn-sm btn-round ml-2">Follow</a></span>{% endif %}</h5>
+						{{ author.bio }}
+					</div>
+				</div>
+                {% endif %}
+
+            <!-- Comments -->
+            {% if page.comments != false %}
+                {% include comments.html %}
             {% endif %}
 
-        </footer>
+		</div>
 
-    </article>
 
-</main>
+	</div>
+</div>
 
-<aside class="read-next">
 
-    <!-- [[! next_post ]] -->{{ post.url | remove: '/' }}
-    {% if page.next %}
-        <a class="read-next-story {% if page.next.cover %}" style="background-image: url({{ site.baseurl }}{{ page.next.cover }}){% else %}no-cover{% endif %}" href="{{ site.baseurl }}{{ page.next.url | remove: '/' }}">
-            <section class="post">
-                <h2>{{ page.next.title }}</h2>
-                <p>{{ page.next.content | strip_html | truncatewords:15 }}</p>
-            </section>
-        </a>
-    {% endif %}
-    <!-- [[! /next_post ]] -->
-    <!-- [[! prev_post ]] -->
-    {% if page.previous %}
-        <a class="read-next-story prev {% if page.previous.cover %}" style="background-image: url({{ site.baseurl }}{{ page.previous.cover }}){% else %}no-cover{% endif %}" href="{{ site.baseurl }}{{ page.previous.url | remove: '/' }}">
-            <section class="post">
-                <h2>{{ page.previous.title }}</h2>
-                <p>{{ page.previous.content | strip_html | truncatewords:15 }}</p>
-            </section>
-        </a>
-    {% endif %}
-    <!-- [[! /prev_post ]] -->
-</aside>
-
-<!-- /post -->
+<!-- Aletbar Prev/Next -->
+<div class="alertbar">
+    <div class="container">
+        <div class="row prevnextlinks small font-weight-bold">
+          {% if page.previous.url %}
+            <div class="col-md-6 rightborder pl-0">
+                <a class="text-dark" href="{{ site.baseurl }}{{ page.previous.url }}">{% if page.previous.image %} <img height="30px" class="mr-1" src="{{site.baseurl}}/{{page.previous.image}}"> {% endif %} {{page.previous.title}}</a>
+            </div>
+          {% endif %}
+          {% if page.next.url %}
+            <div class="col-md-6 text-right pr-0">
+                <a class="text-dark" href="{{ site.baseurl }}{{ page.next.url }}"> {{page.next.title}} {% if page.next.image %} <img height="30px" class="ml-1" src="{{site.baseurl}}/{{page.next.image}}"> {% endif %}</a>
+            </div>
+          {% endif %}
+        </div>
+    </div>
+</div>

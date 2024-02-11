@@ -1,11 +1,11 @@
 ---
 layout: post
-cover: 'assets/images/cover1.jpg'
-navigation: true
-title: 'Fasten Health: An Open-Source, Self-Hosted, Personal Electronic Health Record'
+image: 'assets/images/blood-pressure.png'
+title: 'An Open-Source Personal Health Record'
 date: 2022-09-22 10:18:00
-subclass: 'post tag-fiction'
-author: jason-kulatunga
+tags: sticky
+categories: [ update ]
+author: jason
 ---
 
 We all have a medical history that we want to keep secure and confidential. 
