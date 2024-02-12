@@ -64,7 +64,7 @@ defaults:
 #highlighter: pygments
 markdown: kramdown
 highlighter: rouge
-paginate: 5
+paginate: 15
 language: 'en-us'
 
 # Additional settings available on the front-matter
