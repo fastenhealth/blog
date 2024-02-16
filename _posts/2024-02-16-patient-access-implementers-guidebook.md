@@ -12,7 +12,7 @@ Hey Developers!
 
 ## What is SMART-on-FHIR
 
-In essence, SMART-on-FHIR a powerful standard that allows healthcare applications to securely access data 
+In essence, SMART-on-FHIR is a powerful standard that allows healthcare applications to securely access data 
 from different EHR systems using FHIR (Fast Healthcare Interoperability Resources) and enables third-party
 developers to create innovative healthcare apps that seamlessly integrate with these systems.
 
