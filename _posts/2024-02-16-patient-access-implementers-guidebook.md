@@ -35,7 +35,7 @@ smallest, who are building EHRs specifically for small clinics & clinical specia
 -- we have a list of over [150 different EHR's](https://github.com/fastenhealth/fasten-sources/blob/main/PLATFORM_LIST.md) 
 we'd like to eventually support.
 
-With each of these EHR's we've have the practical experience of: registering with their developer 
+With each of these EHR's we've had the practical experience of: registering with their developer 
 platforms, signing their legal and regulatory contracts, exploring their documentation, finding 
 their Sandbox credentials, implementing their customized version of the SMART-on-FHIR flow and 
 attempting to retrieve FHIR resources on bulk from their API.
