@@ -1,12 +1,11 @@
 ---
 layout: post
-image: 'assets/images/2024-jan-app-stores.png'
+image: 'assets/images/smart-on-fhir.png'
 title: 'Patient Access - An Implementer's Guidebook'
 date: 2024-02-16 10:18:00
 categories: [ guidebook ]
 tags: []
 author: jason
-hidden: true
 ---
 
 Hey Developers!
@@ -81,4 +80,4 @@ So, whether you're a seasoned developer looking to expand your expertise or a ne
 Each vendor guide will be linked below, and to kick things off we'll start by discussing Epic's SMART-on-FHIR implementation.
 
 
-- [Patient Access - An Implementer's Guidebook - Epic]()
+- Patient Access - An Implementer's Guidebook - Epic (coming soon)
