@@ -19,6 +19,8 @@ developers to create innovative healthcare apps that seamlessly integrate with t
 It's one of the foundational building blocks that allows consumer facing patient-access applications - 
 like [Fasten Health](https://www.fastenhealth.com/) - to exist.
 
+![](assets/images/fasten-sources.png)
+
 But as every developer knows, SMART-on-FHIR is just OAuth + OpenID Connect, right? There are client 
 libraries for both, available in every language under the sun.
 
