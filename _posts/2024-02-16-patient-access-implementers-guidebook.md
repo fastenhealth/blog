@@ -22,9 +22,9 @@ our open-source Personal Health Record app - to exist.
 But as ever developer knows, SMART-on-FHIR is just OAuth + OpenID Connect, right? There are client 
 libraries for both, available in every language under the sun.
 
-Sounds fantastic, right? Absolutely! But here's the catch: while SMART-on-FHIR holds has a lot of 
-potential, implementing it in practice isn't exactly a walk in the park -- there's a lot of nuance and 
-edge-cases that implementers need to deal with when attempting to integrate with a new EHR platform.
+Sounds fantastic, but here's the catch: while SMART-on-FHIR is "standardized", implementing it in 
+practice isn't exactly a walk in the park -- there's a lot of nuance and edge-cases that implementers 
+need to deal with when attempting to integrate with a new EHR platform.
 
 ## Implementer's Guidebook - A Blog Series
 
