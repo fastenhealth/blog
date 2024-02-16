@@ -1,7 +1,7 @@
 ---
 layout: post
 image: 'assets/images/smart-on-fhir.png'
-title: 'Patient Access - An Implementer's Guidebook'
+title: "Patient Access - An Implementer's Guidebook"
 date: 2024-02-16 10:18:00
 categories: [ guidebook ]
 tags: []
