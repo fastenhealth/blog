@@ -12,14 +12,14 @@ Hey Developers!
 
 ## What is SMART-on-FHIR
 
-In essence, it's a powerful standard that allows healthcare applications to securely access data 
+In essence, SMART-on-FHIR a powerful standard that allows healthcare applications to securely access data 
 from different EHR systems using FHIR (Fast Healthcare Interoperability Resources) and enables third-party
 developers to create innovative healthcare apps that seamlessly integrate with these systems.
 
-It's one of the foundational building blocks that allows [Fasten Health](https://www.fastenhealth.com/) - 
-our open-source Personal Health Record app - to exist.
+It's one of the foundational building blocks that allows consumer facing patient-access applications - 
+like [Fasten Health](https://www.fastenhealth.com/) - to exist.
 
-But as ever developer knows, SMART-on-FHIR is just OAuth + OpenID Connect, right? There are client 
+But as every developer knows, SMART-on-FHIR is just OAuth + OpenID Connect, right? There are client 
 libraries for both, available in every language under the sun.
 
 Sounds fantastic, but here's the catch: while SMART-on-FHIR is "standardized", implementing it in 
