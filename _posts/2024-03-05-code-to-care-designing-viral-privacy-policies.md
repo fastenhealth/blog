@@ -1,13 +1,12 @@
 ---
 layout: post
 image: 'assets/images/banner.png'
-title: "Healthcare & Open-Source - A Viral Privacy Policy"
+title: "Code to Care: Designing Viral Privacy Policies in Healthcare"
 date: 2024-03-05 10:18:00
 categories: [ philosophy  ]
 tags: [opensource, legal]
 author: jason
 ---
-
 
 As I've been building [Fasten Health](https://www.fastenhealth.com/), I've been thinking a lot about the principles of 
 open-source software, and how they can be applied to healthcare. Not as technical solutions but as an ethos & philosophy.
