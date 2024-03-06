@@ -29,7 +29,7 @@ to how our understanding of science is built atop the work of previous generatio
 
 <img src="https://imgs.xkcd.com/comics/dependency_2x.png" alt="Obligatory XKCD 2 - GDPR" style="height:500px;"/>
 
-> Note: Recognition != Fame
+<small>Note: Recognition != Fame</small>
 
 ## HIPAA & The 21st Century Cures Act
 
