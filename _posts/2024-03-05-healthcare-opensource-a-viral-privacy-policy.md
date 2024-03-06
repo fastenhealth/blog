@@ -62,15 +62,17 @@ corporations like Epic & Cerner, or continuing to [abuse, data mine & monetize](
 
 <img src="https://imgs.xkcd.com/comics/gdpr_2x.png" alt="Obligatory XKCD 2 - GDPR" style="height:700px;"/>
 
-As I've been building [Fasten Health, an open source Personal Health Record (PHR)](https://www.fastenhealth.com/) that 
+[Fasten Health is a Personal Health Record (PHR)](https://www.fastenhealth.com/) that 
 lets patients automatically aggregate their medical records from 100,000s of healthcare institutions in one private 
-health vault, I've spent a lot of time thinking about the implications of this single data source.
+health vault. It's worth considering the implications of this single data source containing all your medical records.
 
 Yes, it's an incredibly powerful tool for patients who would have had to visit a dozen or more individual patient portals 
 to get a full copy of their medical history.
 
 Yes, it'll allow parents, caregivers, **and practitioners** to have the correct historical context when dealing with 
 patients that are unable to advocate for themselves -- think patients suffering from dementia or young children.
+
+Yes, it will help patients full grasp their own medical conditions, resulting in patient engagement and better health outcomes.
 
 But it also makes it easier for patients to mistakenly share their medical records with organizations that want to 
 misuse & data mine their records without the patient's knowledge or consent. Once your medical records are stored on a 
