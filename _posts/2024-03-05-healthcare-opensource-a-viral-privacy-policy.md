@@ -123,7 +123,8 @@ as our [financial data](https://www.denverpost.com/2019/08/31/credit-card-privac
 
 
 ---
-![[banner-transparent.png]]
+[![](assets/images/banner.png)](https://www.fastenhealth.com)
+
 **I'm not a lawyer and I don't know if any of this is possible, but I hope it is.**
 
 If you have some ideas about how Fasten Health could implement something like this, please join us on the [Fasten Health Discord](https://discord.gg/Bykz6BAN8p)
