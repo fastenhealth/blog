@@ -133,9 +133,9 @@ But the paternalistic, patronizing (or worse yet, malicious) blocking of medical
 
 At the very least we need to start seeing:
 
-- **\[ONC/OIG\]** Fines must be levied against organizations that break information blocking rules. The carrot's not working, so let's try the stick.
+- **\[ONC/OIG\]** Fines must be levied against organizations that break information blocking rules. Consider enabling developers to search for and add their support (+1) to existing information blocking complaints. The carrot's not working, so let's try the stick.
 - **\[App Developers\]** Need to step up and start filing complaints with the ONC/OIG when they run into these issues. The more complaints that are filed, the more likely the ONC/OIG will take action.
-Fasten Health has published our [complaints publically,](https://github.com/fastenhealth/information-blocking-complaints) and we urge others to do the same.
+Fasten Health has published our [complaints publicly,](https://github.com/fastenhealth/information-blocking-complaints) and we urge others to do the same.
 - **\[EHR Vendors\]** Provide sandboxes and patient test credentials. Developers _need_ these to ensure their applications function correctly without having to test in production, using real patients as guinea pigs.
 - **\[ONC/EHR Vendors\]** Create Endpoint Catalogs or a National Provider Directory. This is [already in the works](https://build.fhir.org/ig/HL7/fhir-us-ndh/), but it can't come soon enough. Until then, Fasten is happy to share our open source catalog of [FHIR endpoints and branding information](https://github.com/fastenhealth/fasten-sources)
 - **\[EHR Vendors\]** Implement a streamlined and reasonable registration process for application developers. Automated, self-service approvals, like those already used by major EHR platforms, should be the standard. Your multi-month long registration process requiring dozens of emails & Zoom meetings does not comply with the [10 day / 5 day rule](https://www.ecfr.gov/current/title-45/part-170#p-170.404%28b%29%281%29), and will not scale as more developers become aware of these Patient Access APIs.
