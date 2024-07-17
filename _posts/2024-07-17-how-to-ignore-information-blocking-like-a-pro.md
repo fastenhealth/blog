@@ -133,8 +133,21 @@ But the paternalistic, patronizing (or worse yet, malicious) blocking of medical
 
 At the very least we need to start seeing:
 
-- **\[ONC/OIG\]** Fines must be levied against organizations that break information blocking rules. Fasten Health has published our [complaints publically,](https://github.com/fastenhealth/information-blocking-complaints) and we urge others to do the same.
+- **\[ONC/OIG\]** Fines must be levied against organizations that break information blocking rules. The carrot's not working, so let's try the stick.
+- **\[App Developers\]** Need to step up and start filing complaints with the ONC/OIG when they run into these issues. The more complaints that are filed, the more likely the ONC/OIG will take action.
+Fasten Health has published our [complaints publically,](https://github.com/fastenhealth/information-blocking-complaints) and we urge others to do the same.
 - **\[EHR Vendors\]** Provide sandboxes and patient test credentials. Developers _need_ these to ensure their applications function correctly without having to test in production, using real patients as guinea pigs.
 - **\[ONC/EHR Vendors\]** Create Endpoint Catalogs or a National Provider Directory. This is [already in the works](https://build.fhir.org/ig/HL7/fhir-us-ndh/), but it can't come soon enough. Until then, Fasten is happy to share our open source catalog of [FHIR endpoints and branding information](https://github.com/fastenhealth/fasten-sources)
 - **\[EHR Vendors\]** Implement a streamlined and reasonable registration process for application developers. Automated, self-service approvals, like those already used by major EHR platforms, should be the standard. Your multi-month long registration process requiring dozens of emails & Zoom meetings does not comply with the [10 day / 5 day rule](https://www.ecfr.gov/current/title-45/part-170#p-170.404%28b%29%281%29), and will not scale as more developers become aware of these Patient Access APIs.
 - **\[ONC\]** [Patient-scoped Bulk Export](https://build.fhir.org/ig/argonautproject/ehi-api/ehi-export.html): please reconsider making this mandatory. Some [FHIR resources lack reciprocal relationships](https://www.youtube.com/watch?v=l93-yBCBl98) -- requiring app developers to parse each resource, extract references and make individual requests to retrieve a full copy of a patient's medical records. This process is unnecessarily complicated, fragile and resource-intensive for both EHR vendors and app developers.
+
+> If you're a patient-facing organization that's overwhelmed by the difficulty accessing medical records -- even when the patient has explicitly consented -- [please reach out to me](https://forms.gle/CymBsKqLsX3bjuTEA).
+
+Finally, a thanks to everyone who reviewed and gave me feedback on this post:
+
+- Brendan Keeler
+- Dave deBronkart
+- H. Kamran
+- Josh Mandel
+- Michael Kennedy
+- PhantomsGhost
