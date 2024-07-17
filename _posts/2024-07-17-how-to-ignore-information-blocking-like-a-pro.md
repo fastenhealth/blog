@@ -83,7 +83,7 @@ Let’s dive into the top-notch techniques that will help you keep those pesky p
 **12\. Unusable but compliant FHIR Endpoints**
 
 - If you want to be extra creative, you can follow the letter of the law by publishing a single FHIR endpoint, but then require the patient to enter an `office_id` or `clinic_id` when they login with their portal credentials.
-- This is a great technique because legally you’re complaint (atleast until HTI-1), but functionally your API is almost unusable since patient have no idea what an `office_id` is.
+- This is a great technique because legally you’re complaint (atleast until HTI-1), but functionally your API is almost unusable since patients have no idea what an `office_id` is.
 - Reach out to our colleagues at [AdvancedMD if you want to learn more](https://github.com/fastenhealth/information-blocking-complaints/blob/main/CFS-5410-advancedmd.md) about this technique.
 
 ![](assets/images/information-blocking/advancedmd.png)
