@@ -23,7 +23,7 @@ Let’s dive into the top-notch techniques that will help you keep those pesky p
 **2\. Lack of Support & Contacts**
 
 - Set up broken email addresses, ignored mailboxes and support phone numbers manned by clueless operators. This will ensure any developer attempting to get help quickly loses hope.
-- If you’d like to learn more about this technique, please [contact our colleagues at InteliChart](https://github.com/fastenhealth/information-blocking-complaints/blob/main/IB-2819-intelichart.md) (if you can get a hold of them)
+- If you’d like to learn more about this technique, please [contact our colleagues at InteliChart](https://github.com/fastenhealth/information-blocking-complaints/blob/main/IB-2819-intelichart.md) (if you can get ahold of them)
 
 **3\. No Sandbox or Missing Sandbox Credentials**
 
