@@ -86,7 +86,7 @@ Let’s dive into the top-notch techniques that will help you keep those pesky p
 - This is a great technique because legally you’re complaint (atleast until HTI-1), but functionally your API is almost unusable since patient have no idea what an `office_id` is.
 - Reach out to our colleagues at [AdvancedMD if you want to learn more](https://github.com/fastenhealth/information-blocking-complaints/blob/main/CFS-5410-advancedmd.md) about this technique.
 
-![](assets/images/information-blocking/cerner.png)
+![](assets/images/information-blocking/advancedmd.png)
 
 **13\. API Rate Limits**
 
