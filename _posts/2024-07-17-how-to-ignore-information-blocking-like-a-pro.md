@@ -121,7 +121,7 @@ Let’s dive into the top-notch techniques that will help you keep those pesky p
 
 `</sarcasm>`
 
-I hope you enjoyed my light-hearted attempt at discussing some of the serious issues that Patient Application developers (like Fasten Health) run into as we integrate with EHRs and Health Systems.
+I hope you enjoyed my light-hearted attempt at discussing some of the serious issues that Patient Access API developers (like Fasten Health) run into as we integrate with EHRs and Health Systems.
 
 At the end of the day, these are real patients requesting access to their own medical records using a third party app that they trust.
 
