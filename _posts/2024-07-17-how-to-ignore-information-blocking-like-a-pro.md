@@ -115,7 +115,7 @@ Let’s dive into the top-notch techniques that will help you keep those pesky p
 - Sometimes it’s best to just be bold and choose to (mis)understand the legislation in a way that doesn’t impact your organization. What’s the worst that could happen? A lawsuit? ha
 - You’d be in good company: [Labcorp’s legal team](https://github.com/fastenhealth/information-blocking-complaints/blob/main/IB-2820-labcorp.md) seems to believe that Patient Access APIs should not be usable by 3rd party developers, only by the patient themselves? ie. all patients should learn to code.
 
-_In particular, we provide patients with access to their health data through our patient portal and through other mechanisms in a manner that complies with our legal obligations. The information blocking rules are designed to increase patient access to health data, not to grant rights to third parties, like Fasten Health, to patient data._
+> In particular, we provide patients with access to their health data through our patient portal and through other mechanisms in a manner that complies with our legal obligations. The information blocking rules are designed to increase patient access to health data, not to grant rights to third parties, like Fasten Health, to patient data.
 
 ## Conclusion
 
