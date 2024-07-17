@@ -119,7 +119,7 @@ _In particular, we provide patients with access to their health data through our
 
 ## Conclusion
 
-&lt;/sarcasm&gt;
+`&lt;/sarcasm&gt;`
 
 I hope you enjoyed my light-hearted attempt at discussing some of the serious issues that Patient Application developers (like Fasten Health) run into as we integrate with EHRs and Health Systems.
 
