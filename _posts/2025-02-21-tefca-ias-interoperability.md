@@ -75,16 +75,15 @@ Federated Identity, ensuring that patient access isn’t compromised.
 
 - **\[HHS\]** As the CARIN Alliance requested in their [comments to the ONC](https://cdn.prod.website-files.com/66635361bd8176cd6413cb24/66635361bd8176cd6413cc4b_CA-Comments-to-Recognized-Entity-Current-Draft-IAS-Exchange-Implementation-SOP.pdf), 
 we need the the HHS Office of Civil Rights (OCR) to:
-> "Issu\[e\] guidance and/or enforcement discretion for situations 
-where an app vendor \[that is contractually required to comply with the HIPAA Privacy and Security regulations\] reviews 
-or securely destroys non-matches prior to populating them in the wrong patient’s record under the "low probability of 
-compromise" analysis, set forth in 45 CFR §164.402(2)." 
+  > "Issu\[e\] guidance and/or enforcement discretion for situations 
+  where an app vendor \[that is contractually required to comply with the HIPAA Privacy and Security regulations\] reviews 
+  or securely destroys non-matches prior to populating them in the wrong patient’s record under the "low probability of 
+  compromise" analysis, set forth in 45 CFR §164.402(2)." 
 
-By the way, this isn’t a big ask of HHS \- in the original 
-HIPAA breach notification rule, OCR already stated in guidance that if information is misdirected to 
-> "another entity governed by the HIPAA Privacy and Security Rules…there may be less risk of harm to the individual, since the recipient 
-is obligated to protect the privacy and security of the information …in the same *or similar* manner as the entity that 
-disclosed the information." (See 74 Fed. Reg. 42740, at 42744 (Aug. 24, 2009\) (emphasis added).)
+  By the way, this isn’t a big ask of HHS \- in the original HIPAA breach notification rule, OCR already stated in guidance that if information is misdirected to 
+  > "another entity governed by the HIPAA Privacy and Security Rules…there may be less risk of harm to the individual, since the recipient 
+  is obligated to protect the privacy and security of the information …in the same *or similar* manner as the entity that 
+  disclosed the information." (See 74 Fed. Reg. 42740, at 42744 (Aug. 24, 2009\) (emphasis added).)
 
 - **\[EHRs\]** We also need other large EHR vendors (looking at you Oracle Cerner) to publicly state they are following Meditech 
 & Athena’s lead, and will be responding to Federated Identity requests directly, rather than requiring a hybrid verified 
