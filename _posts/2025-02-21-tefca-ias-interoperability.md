@@ -73,7 +73,7 @@ Federated Identity, ensuring that patient access isn’t compromised.
 
 ### How can we make this better?
 
-**\[HHS\]** As the CARIN Alliance requested in their [comments to the ONC](https://cdn.prod.website-files.com/66635361bd8176cd6413cb24/66635361bd8176cd6413cc4b_CA-Comments-to-Recognized-Entity-Current-Draft-IAS-Exchange-Implementation-SOP.pdf), 
+- **\[HHS\]** As the CARIN Alliance requested in their [comments to the ONC](https://cdn.prod.website-files.com/66635361bd8176cd6413cb24/66635361bd8176cd6413cc4b_CA-Comments-to-Recognized-Entity-Current-Draft-IAS-Exchange-Implementation-SOP.pdf), 
 we need the the HHS Office of Civil Rights (OCR) to "Issu\[e\] guidance and/or enforcement discretion for situations 
 where an app vendor \[that is contractually required to comply with the HIPAA Privacy and Security regulations\] reviews 
 or securely destroys non-matches prior to populating them in the wrong patient’s record under the "low probability of 
@@ -82,20 +82,16 @@ HIPAA breach notification rule, OCR already stated in guidance that if informati
 governed by the HIPAA Privacy and Security Rules…there may be less risk of harm to the individual, since the recipient 
 is obligated to protect the privacy and security of the information …in the same *or similar* manner as the entity that 
 disclosed the information." (See 74 Fed. Reg. 42740, at 42744 (Aug. 24, 2009\) (emphasis added).)
-
-**\[EHRs\]** We also need other large EHR vendors (looking at you Oracle Cerner) to publicly state they are following Meditech 
+- **\[EHRs\]** We also need other large EHR vendors (looking at you Oracle Cerner) to publicly state they are following Meditech 
 & Athena’s lead, and will be responding to Federated Identity requests directly, rather than requiring a hybrid verified 
 identity AND portal credentials – which is basically the worst of both worlds.
-
-**\[Practitioners and Health Systems\]** should recognize that patients are frustrated with the dozens of portals they have 
+- **\[Practitioners and Health Systems\]** should recognize that patients are frustrated with the dozens of portals they have 
 to login to to get their comprehensive medical history. TEFCA IAL2 tokens (more on that later) provide a common, safe and 
 secure mechanism to uniquely identify the patient. If it’s safe enough to use Clear and ID.me to login to government webpages 
 or board my flight, why can’t I use this same mechanism to access my medical data?
-
-**\[Fasten\]** In the meantime, here’s what we’re doing at Fasten:
-
-* We’re prioritizing integrations that make it easier for patients to retrieve their records **today** – which includes TEFCA’s record locator service – which solves the discoverability problem (answering “which health systems have I been to?”)
-* We’re integrating directly with healthcare providers (over 40,000 at last count) in addition to TEFCA. Our goal is to become **a turn-key solution for any and all ways for patients (and app developers) to access medical records**.
+- **\[Fasten\]** In the meantime, here’s what we’re doing at Fasten:
+  - We’re prioritizing integrations that make it easier for patients to retrieve their records **today** – which includes TEFCA’s record locator service – which solves the discoverability problem (answering “which health systems have I been to?”)
+  - We’re integrating directly with healthcare providers (over 40,000 at last count) in addition to TEFCA. Our goal is to become **a turn-key solution for any and all ways for patients (and app developers) to access medical records**.
 
 ## Mandatory Response: HIEs & Treatment Purpose of Use
 
@@ -118,7 +114,7 @@ This momentum signals that TEFCA IAS is gaining traction, thanks to the hard wor
 
 ### How can we make this better?
 
-**\[Practitioners and Health Systems\]** While responding to TEFCA IAS requests is mandatory, connecting to the network itself is optional in many states. If you’re a practitioner, health system or EHR vendor, you should consider joining the network to improve patient access and interoperability. Patient need their records from all the healthcare institutions they've visited, not just the ones that have already joined TEFCA.
+- **\[Practitioners and Health Systems\]** While responding to TEFCA IAS requests is mandatory, connecting to the network itself is optional in many states. If you’re a practitioner, health system or EHR vendor, you should consider joining the network to improve patient access and interoperability. Patient need their records from all the healthcare institutions they've visited, not just the ones that have already joined TEFCA.
 
 ## Identity Verification Madness
 
@@ -241,13 +237,10 @@ While it’s not perfect, we firmly believe in its potential to completely trans
 
 At Fasten, we are committed to patient access and patient empowerment \-- and that means we'll do everything we can to make TEFCA IAS better, even if that’s just writing deeply technical blog posts as we run into problems. We want to help create a future where patients can easily access their medical data without any barriers.
 
-If you want to learn more about [Fasten Connect](https://www.fastenhealth.com/) (our unified API providing access to medical records from over 40,000 healthcare institutions – and soon the TEFCA network) please get in touch.
-
-
 <br/>
 <div class="alert alert-secondary" role="alert">
     <i class="fa fa-info-circle"></i>
-    If you want to learn more about [Fasten Connect](https://www.fastenhealth.com/) (our unified API providing access to medical records from over 40,000 healthcare institutions – and soon the TEFCA network) <a style="color:white; text-decoration: underline; font-weight: bold" href="https://forms.gle/CymBsKqLsX3bjuTEA">please get in touch</a>.
+    If you want to learn more about <a href="https://www.fastenhealth.com/">Fasten Connect<a/> (our unified API providing access to medical records from over 40,000 healthcare institutions – and soon the TEFCA network) <a style="color:white; text-decoration: underline; font-weight: bold" href="https://forms.gle/CymBsKqLsX3bjuTEA">please get in touch</a>.
 </div>
 
 Finally, a thanks to everyone who reviewed and gave me feedback on this post:
