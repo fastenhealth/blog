@@ -243,7 +243,7 @@ At Fasten, we are committed to patient access and patient empowerment \-- and th
 <br/>
 <div class="alert alert-secondary" role="alert">
     <i class="fa fa-info-circle"></i>
-    If you want to learn more about <a href="https://www.fastenhealth.com/">Fasten Connect</a> (our unified API providing access to medical records from over 40,000 healthcare institutions – and soon the TEFCA network) <a style="color:white; text-decoration: underline; font-weight: bold" href="https://forms.gle/CymBsKqLsX3bjuTEA">please get in touch</a>.
+    If you want to learn more about Fasten Connect (our unified API providing access to medical records from over 40,000 healthcare institutions – and soon the TEFCA network) <a style="color:white; text-decoration: underline; font-weight: bold" href="https://forms.gle/CymBsKqLsX3bjuTEA">please get in touch</a>.
 </div>
 
 Finally, a thanks to everyone who reviewed and gave me feedback on this post:
