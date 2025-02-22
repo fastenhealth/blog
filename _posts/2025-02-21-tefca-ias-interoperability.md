@@ -2,7 +2,7 @@
 layout: post
 image: 'assets/images/tefca-ias-interoperability/network.jpg'
 title: "TEFCA IAS - A Story of Interoperability and Unrealized Potential"
-date: 2025-02-24 10:18:00
+date: 2025-02-21 10:18:00
 categories: [ guidebook  ]
 tags: [tefca]
 author: jason
