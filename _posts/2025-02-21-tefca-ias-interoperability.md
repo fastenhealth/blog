@@ -175,7 +175,7 @@ The following table lists all IAL2 certified vendors, and their support for OIDC
 | Socure | Did not respond |
 
 * <small>[\*\] manual vendor configuration necessary, does not work out of the box.</small> 
-* </small>[\*\*\] payload is compliant with [CareQuality claims](https://carequality.org/wp-content/uploads/2023/08/Carequality-Technical-Trust-Policy-v4-Final-20230627.pdf), not OIDC/TEFCA standard claims. </small>
+* <small>[\*\*\] payload is compliant with [CareQuality claims](https://carequality.org/wp-content/uploads/2023/08/Carequality-Technical-Trust-Policy-v4-Final-20230627.pdf), not OIDC/TEFCA standard claims. </small>
 
 ### (Non)Standard Claims
 
@@ -244,7 +244,7 @@ At Fasten, we are committed to patient access and patient empowerment \-- and th
 <br/>
 <div class="alert alert-secondary" role="alert">
     <i class="fa fa-info-circle"></i>
-    If you want to learn more about <a href="https://www.fastenhealth.com/">Fasten Connect<a/> (our unified API providing access to medical records from over 40,000 healthcare institutions – and soon the TEFCA network) <a style="color:white; text-decoration: underline; font-weight: bold" href="https://forms.gle/CymBsKqLsX3bjuTEA">please get in touch</a>.
+    If you want to learn more about <a href="https://www.fastenhealth.com/">Fasten Connect</a> (our unified API providing access to medical records from over 40,000 healthcare institutions – and soon the TEFCA network) <a style="color:white; text-decoration: underline; font-weight: bold" href="https://forms.gle/CymBsKqLsX3bjuTEA">please get in touch</a>.
 </div>
 
 Finally, a thanks to everyone who reviewed and gave me feedback on this post:
@@ -254,4 +254,4 @@ Finally, a thanks to everyone who reviewed and gave me feedback on this post:
 - Josh Mandel
 - Ryan Howells
 
-<small>Photo by [New England Journal of Medicine](https://www.nejm.org/)</small>
+<small>Photo by <a href="https://www.nejm.org/">New England Journal of Medicine</a></small>
