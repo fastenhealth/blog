@@ -156,25 +156,24 @@ As a developer, you'll find out the hard way that a large number of the IAL2 ven
 The following table lists all IAL2 certified vendors, and their support for OIDC Token Generation as of date of writing.
 
 | Kantara Certified IAL2 Vendor | Compliant OIDC Token Generation |
-| :---- | :---- |
-| 1Kosmos | Did not respond |
-| Au10Tix | Did not respond |
-| Clear | Yes\*\* |
-| Exostar | Did not respond |
-| Experian | Did not respond |
-| ID.me | Yes  |
-| IDDataWeb | Yes\* |
-| IDEMIA | No |
-| Incode | No |
-| JakobsenID | Did not respond |
-| NextgenID | Did not respond |
-| Onfido | Did not respond |
-| Persona | No |
-| Proof | No |
-| Socure | Did not respond |
+| :---- |:--------------------------------|
+| 1Kosmos | Did not respond                 |
+| Au10Tix | Did not respond                 |
+| Clear | Yes                             |
+| Exostar | Did not respond                 |
+| Experian | Did not respond                 |
+| ID.me | Yes                             |
+| IDDataWeb | Yes\*                           |
+| IDEMIA | No                              |
+| Incode | No                              |
+| JakobsenID | Did not respond                 |
+| NextgenID | Did not respond                 |
+| Onfido | Did not respond                 |
+| Persona | No                              |
+| Proof | No                              |
+| Socure | Did not respond                 |
 
 * <small>[\*\] manual vendor configuration necessary, does not work out of the box.</small> 
-* <small>[\*\*\] payload is compliant with [CareQuality claims](https://carequality.org/wp-content/uploads/2023/08/Carequality-Technical-Trust-Policy-v4-Final-20230627.pdf), not OIDC/TEFCA standard claims. </small>
 
 ### (Non)Standard Claims
 
