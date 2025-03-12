@@ -11,6 +11,7 @@ author: jason
 The [21st Century Cures Act](https://www.ecfr.gov/current/title-45/part-170#p-170.404(b)(1)) requires Certified EHRs to approve Patient Access API requests within:
 - **10 business days** to verify an API user’s identity
 - **5 business days** after verification to enable the application
+
 Total time: **15 business days max** -- but many developers (including us) **know the wait times are much longer**
 
 ## Why does this rule exist?
@@ -37,6 +38,6 @@ Instead of forcing businesses to integrate separately with multiple EHRs, Fasten
 <br/>
 <div class="alert alert-secondary" role="alert">
     <i class="fa fa-info-circle"></i>
-    <strong>Dealing with API approval delays? Let’s talk.</strong><br/><br/> 
-    Book time to discuss your experience and explore how Fasten can simplify the process: https://calendly.com/jason-kulatunga/30min.
+    <strong>Dealing with API approval delays? Let’s talk.</strong><br/>
+    <a href="https://calendly.com/jason-kulatunga/30min">Book time</a> to discuss your experience and explore how Fasten can simplify the process
 </div>
