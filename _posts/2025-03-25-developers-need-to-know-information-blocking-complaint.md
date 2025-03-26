@@ -133,8 +133,8 @@ against the health system or vendor in question.
 
 
 ## How Fasten Health Helps:
-At Fasten Health, we've had to navigate these complexities ourselves, having submitted numerous Information Blocking 
-complaints and follow-ups to the ONC. Our unified API significantly reduces these regulatory burdens, allowing developers 
+At Fasten Health, we've had to navigate these complexities ourselves, having [submitted numerous Information Blocking 
+complaints](https://github.com/fastenhealth/information-blocking-complaints) and follow-ups to the ONC. Our unified API significantly reduces these regulatory burdens, allowing developers 
 to avoid lengthy complaint processes and instead focus on a simple turnkey API for healthcare data integration.
 
 ## Links to ONC Resources:
