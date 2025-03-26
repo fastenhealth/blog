@@ -147,11 +147,11 @@ to avoid lengthy complaint processes and instead focus on a simple turnkey API f
 <br/>
 <div class="alert alert-secondary" role="alert">
     <i class="fa fa-info-circle"></i>
-    <strong>Have you encountered API integration roadblocks or ambiguous regulatory interpretations? </strong><br/>
+    <strong>Have you encountered API integration roadblocks? </strong><br/>
     Let's address these challenges together -- <a style="color:white; text-decoration: underline; font-weight: bold" href="https://calendly.com/jason-kulatunga/30min">book time with our team</a>.
 </div>
 
 
-Stay tuned for more insights in our ongoing Information Blocking series, designed to help developers effectively navigate 
+Stay tuned for more insights in our ongoing "Developers Need to Know" series, designed to help developers effectively navigate 
 these regulatory challenges.
 
