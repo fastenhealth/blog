@@ -14,12 +14,12 @@ comparing 2 similar products -- a good API (with a clean design and thorough doc
 -- depending on the industry.
 
 APIs are also extremely common in Healthcare, but traditionally they’ve been designed for enterprise software integrations 
-which require BAA’s, contracts, and large sums of money before they can be used. In general, it was thought that making it 
+which require [BAA’s](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html), contracts, and large sums of money before they can be used. In general, it was thought that making it 
 easy to manipulate/share medical records in an automated way was a security liability, not a feature.
 
-With the introduction of the 21st Century Cures Act Patient Access APIs, EHR vendors were forced to provide a new set of 
-read-only APIs following the FHIR standard, ones that could be used by consumer apps, without requiring any BAA’s or 
-HIPAA compliance.
+With the introduction of the 21st Century Cures Act Patient Access APIs, EHR vendors are required to provide a new set of 
+read-only APIs following the FHIR standard, allowing patients to securely share their medical records directly with trusted 
+consumer apps, without requiring any BAA’s or HIPAA compliance.
 
 This is a huge win for patients, however, it will be a burden for EHR vendors (due to ongoing maintenance and lost revenue). 
 Because Patient Access APIs were introduced as a regulatory requirement, rather than a monetary/business incentive, 
