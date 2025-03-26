@@ -55,7 +55,7 @@ There are 4 different complaint forms available, but we find that the majority o
 - `Report Information Blocking` - This is for issues with a specific Healthcare institution. eg. Blocking patient's from  accessing their own medical records via a third-party app, missing portal registration processes or not providing information about their EHR vendor, etc.
 
 
-![healthit-feedback-and-inquiry-portal-form.png](assets/images/information-blocking-complaints/healthit-feedback-and-inquiry-portal-form.png)<<IMAGE FROM FORM SUBMISSION HERE>>
+![healthit-feedback-and-inquiry-portal-form.png](assets/images/information-blocking-complaints/healthit-feedback-and-inquiry-portal-form.png)
 
 Next, you must fill out the complaint form. You always have the option to file the complaint anonymously, however, if you're 
 willing to share your contact information the ASTP will be able to reach out if they require additional context and you'll 
