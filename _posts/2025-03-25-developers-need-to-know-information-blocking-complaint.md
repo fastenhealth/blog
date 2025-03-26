@@ -9,17 +9,17 @@ author: jason
 ---
 
 Application Programming Interfaces (APIs) are a way to allow different applications to communicate and exchange data 
-programmatically (without a human involved). They are incredibly common and can act like a market differentiator when 
-comparing 2 similar products -- a good API (with a clean design and thorough documentation) can make or break a product 
--- depending on the industry.
+programmatically (without a human involved). They are incredibly common and can act like a market differentiator -- a 
+good API (with a clean design and thorough documentation) can make or break a product -- depending on the industry.
 
 APIs are also extremely common in Healthcare, but traditionally they’ve been designed for enterprise software integrations 
-which require [BAA’s](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html), contracts, and large sums of money before they can be used. In general, it was thought that making it 
-easy to manipulate/share medical records in an automated way was a security liability, not a feature.
+which require [BAA’s](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html), contracts, and large sums 
+of money before they can be used. In general, it was thought that making it easy to access medical records 
+in an automated way was a security liability, not a feature.
 
-With the introduction of the 21st Century Cures Act Patient Access APIs, EHR vendors are required to provide a new set of 
-read-only APIs following the FHIR standard, allowing patients to securely share their medical records directly with trusted 
-consumer apps, without requiring any BAA’s or HIPAA compliance.
+The 21st Century Cures Act introduced Patient Access APIs which require EHR vendors to offer a new set of read-only APIs 
+based on the FHIR standard, enabling patients to securely share their medical records directly with trusted consumer apps,
+without the need for BAAs or HIPAA compliance.
 
 This is a huge win for patients, however, it will be a burden for EHR vendors (due to ongoing maintenance and lost revenue). 
 Because Patient Access APIs were introduced as a regulatory requirement, rather than a monetary/business incentive, 
@@ -137,6 +137,12 @@ At Fasten Health, we've had to navigate these complexities ourselves, having [su
 complaints](https://github.com/fastenhealth/information-blocking-complaints) and follow-ups to the ONC. Our unified API significantly reduces these regulatory burdens, allowing developers 
 to avoid lengthy complaint processes and instead focus on a simple turnkey API for healthcare data integration.
 
+<div class="alert alert-secondary" role="alert">
+    <i class="fa fa-info-circle"></i>
+    <strong>Have you encountered API integration roadblocks? </strong><br/>
+    Let's address these challenges together -- <a style="color:white; text-decoration: underline; font-weight: bold" href="https://calendly.com/jason-kulatunga/30min">book time with our team</a>.
+</div>
+
 ## Links to ONC Resources:
 - [ASTP FAQs on Information Blocking](https://www.healthit.gov/faqs) – Clarify common questions and interpretations.
 - [Exception to Information Blocking Rules](https://www.healthit.gov/sites/default/files/2024-04/IB_Exceptions_Fact_Sheet_508_0.pdf) – Understand permissible scenarios clearly defined by ONC.
@@ -144,12 +150,6 @@ to avoid lengthy complaint processes and instead focus on a simple turnkey API f
 - [Health IT JIRA](https://inquiry.healthit.gov/support/plugins/servlet/desk/portal/6) - View the status of your complaints & provide additional feedback
 - [Health IT API Resource Guide](https://onc-healthit.github.io/api-resource-guide/inquiry-portal/404-inquiries/) - Provides supplementary information & clarifications for developers, using the Inquiry Portal submissions. 
 
-<br/>
-<div class="alert alert-secondary" role="alert">
-    <i class="fa fa-info-circle"></i>
-    <strong>Have you encountered API integration roadblocks? </strong><br/>
-    Let's address these challenges together -- <a style="color:white; text-decoration: underline; font-weight: bold" href="https://calendly.com/jason-kulatunga/30min">book time with our team</a>.
-</div>
 
 
 Stay tuned for more insights in our ongoing "Developers Need to Know" series, designed to help developers effectively navigate 
