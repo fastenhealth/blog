@@ -27,7 +27,7 @@ most EHRs have only done the minimum amount of work required to be "certified".
 
 ## What’s happening with Patient Access APIs and Information Blocking requirements:
 
-Information Blocking Actors (such as Healthcare providers, EHR vendors, and health information networks) often face 
+[Information Blocking Actors](https://www.healthit.gov/sites/default/files/2024-04/IB_Actors_Fact_Sheet_508_0.pdf) (such as Healthcare providers, EHR vendors, and health information networks) often face 
 complex and sometimes ambiguous interpretations of information-blocking regulations, leading to inconsistent application. 
 Financial incentives & differing interpretations around permissible exceptions (such as patient privacy, security concerns, 
 or technical infeasibility) can complicate and stall the development of Patient Access APIs -- which fundamentally limit 
@@ -59,14 +59,14 @@ There are 4 different complaint forms available, but we find that the majority o
 
 Next, you must fill out the complaint form. You always have the option to file the complaint anonymously, however, if you're 
 willing to share your contact information the ASTP will be able to reach out if they require additional context and you'll 
-be able to easily track the status of your submissions.
+be able to easily [track the status of your submissions](https://inquiry.healthit.gov/support/plugins/servlet/desk/portal/6).
 
 The complaint body is free text, but we like to follow a template when making submissions. It helps ensure important 
 context is included in our submissions and hopefully makes the triage process quicker on the ASTP side.
 
 ```markdown
  
- I am the President of <<COMPANY NAME HERE>> a <<1 LINE DESCRIPTION OF COMPANY APP>> that uses Patient Access APIs.
+I am the President of <<COMPANY NAME HERE>> a <<1 LINE DESCRIPTION OF COMPANY APP>> that uses Patient Access APIs.
 
 I’m submitting an Information Blocking Complaint against:
 
@@ -79,13 +79,16 @@ I’m submitting an Information Blocking Complaint against:
 
 Timeline:
     <<DATE>> - <<1 LINE OF COMMUNICATION>> - <<RESULT OF COMMUNICATION>>
+    <<DATE>> - <<1 LINE OF COMMUNICATION>> - <<RESULT OF COMMUNICATION>>
+    <<DATE>> - <<1 LINE OF COMMUNICATION>> - <<RESULT OF COMMUNICATION>>
 
 ```
 
-Here's an example complaint against Intelichart following this format: https://github.com/fastenhealth/information-blocking-complaints/blob/main/IB-2819-intelichart.md
+Here's an example [complaint against Intelichart](https://github.com/fastenhealth/information-blocking-complaints/blob/main/IB-2819-intelichart.md) following this format: 
 
 ```
- I am the President of Fasten Health, Inc. a Personal Health Record (PHR) application that allows patients to create a longitudinal health record using Patient Access APIs.
+I am the President of Fasten Health, Inc. a Personal Health Record (PHR) application that allows patients to create a 
+longitudinal health record using Patient Access APIs.
 
 I’m submitting an Information Blocking Complaint against:
 
@@ -94,7 +97,8 @@ I’m submitting an Information Blocking Complaint against:
 - **Role**: Certified Health IT
 - **CHPL Link**: https://chpl.healthit.gov/#/listing/8854
 
-I’ve attempted to register with their development environment, and have experienced a number of issues making it impossible. I’ve attempted to reach out to their support team via email, forms, phone and directly contacting their CEO with no response.
+I’ve attempted to register with their development environment, and have experienced a number of issues making it impossible. 
+I’ve attempted to reach out to their support team via email, forms, phone and directly contacting their CEO with no response.
 
 Timeline:
 
@@ -123,7 +127,7 @@ complaint, it essentially disappears into a black hole. The ASTP will make note 
 and potentially reach out to the healthcare institution or EHR vendor if the ticket(s) are actionable, but you'll never know.
 
 Instead, you'll find out if an action was taken if/when the EHR vendor messages you directly, you notice a generic update 
-to the ASTP's [Health IT Inquiry & Feedback Portal](https://onc-healthit.github.io/api-resource-guide/inquiry-portal/404-inquiries/), 
+to the ASTP's [Health IT API Resource Guide](https://onc-healthit.github.io/api-resource-guide/inquiry-portal/404-inquiries/), 
 or there's an article written about a [massive fine](https://www.hhs.gov/about/news/2025/03/06/hhs-office-civil-rights-imposes-200000-penalty-against-oregon-health-science-university-failure-provide-timely-access-patient-records.html) 
 against the health system or vendor in question.
 
@@ -134,8 +138,11 @@ complaints and follow-ups to the ONC. Our unified API significantly reduces thes
 to avoid lengthy complaint processes and instead focus on a simple turnkey API for healthcare data integration.
 
 ## Links to ONC Resources:
-ONC FAQs on Information Blocking – Clarify common questions and interpretations.
-Exception to Information Blocking Rules – Understand permissible scenarios clearly defined by ONC.
+- [ASTP FAQs on Information Blocking](https://www.healthit.gov/faqs) – Clarify common questions and interpretations.
+- [Exception to Information Blocking Rules](https://www.healthit.gov/sites/default/files/2024-04/IB_Exceptions_Fact_Sheet_508_0.pdf) – Understand permissible scenarios clearly defined by ONC.
+- [Health IT Feedback and Inquiry Portal](https://www.healthit.gov/feedback) - Where you can go to file a complaint with the ASTP
+- [Health IT JIRA](https://inquiry.healthit.gov/support/plugins/servlet/desk/portal/6) - View the status of your complaints & provide additional feedback
+- [Health IT API Resource Guide](https://onc-healthit.github.io/api-resource-guide/inquiry-portal/404-inquiries/) - Provides supplementary information & clarifications for developers, using the Inquiry Portal submissions. 
 
 <br/>
 <div class="alert alert-secondary" role="alert">
