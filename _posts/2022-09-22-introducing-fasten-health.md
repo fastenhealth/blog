@@ -3,7 +3,6 @@ layout: post
 image: 'assets/images/blood-pressure.png'
 title: 'An Open-Source Personal Health Record'
 date: 2022-09-22 10:18:00
-tags: sticky
 categories: [ update ]
 author: jason
 ---
