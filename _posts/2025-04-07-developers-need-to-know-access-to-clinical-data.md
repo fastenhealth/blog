@@ -8,8 +8,8 @@ tags: [legal, information-blocking]
 author: jason
 ---
 
-If you're building a patient-facing app that requires access to medical records and you've been given the runaround, told 
-that you need to sign BAAs and pay exorbitant fees before gaining API access to patient records, you may have some recourse. 
+If you're building a patient-facing app that requires access to medical records, you've probably been given the runaround: 
+told that you need to sign BAAs and pay exorbitant fees before gaining API access to patient records. However, you may have some recourse. 
 Certain "actors" (as defined in the legislation) are legally required to share electronic health information (EHI) with 
 patients upon request.
 
