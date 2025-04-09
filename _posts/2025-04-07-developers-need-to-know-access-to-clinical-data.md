@@ -32,7 +32,7 @@ Together, these entities have an almost complete picture of a patient's medical 
 
 By law, these actors must enable access to clinical data unless a defined exception applies. We’ve seen certified EHRs 
 delay app approvals for weeks with vague “security reviews,” only to grant access quickly after an Information Blocking 
-complaint (See our previous post for step-by-step instructions for [How to file an Information Blocking Complaint]({% 2025-03-25-developers-need-to-know-information-blocking-complaint.md %})). 
+complaint (See our previous post for step-by-step instructions for [How to file an Information Blocking Complaint]({% post_url 2025-03-25-developers-need-to-know-information-blocking-complaint %})). 
 These kinds of delays can disrupt developer timelines and impact patients waiting on care.
 
 For more on who qualifies as an "actor" see our table below! (or the [ONC Information Blocking Actors Fact Sheet](https://www.healthit.gov/sites/default/files/2024-04/IB_Actors_Fact_Sheet_508_0.pdf))
