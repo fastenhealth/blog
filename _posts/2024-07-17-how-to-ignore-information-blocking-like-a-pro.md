@@ -4,7 +4,7 @@ image: 'assets/images/information-blocking/maze.jpg'
 title: "How to Ignore Information Blocking Legislation Like a Pro"
 date: 2024-07-17 10:18:00
 categories: [ guidebook  ]
-tags: [legal, information-blocking]
+tags: [legal, information-blocking, featured]
 author: jason
 ---
 
