@@ -1,6 +1,6 @@
 ---
 layout: post
-image: 'assets/images/tefca-ias-interoperability/network.jpg'
+image: 'assets/images/tefca-ias/interoperability-where-its-headed.webp'
 title: "TEFCA IAS - What Does it Actually Mean for Patients"
 date: 2025-06-17 10:18:00
 categories: [ guidebook  ]
@@ -145,3 +145,5 @@ the backend plumbing.
 </div>
 
 <script src="https://vjs.zencdn.net/8.22.0/video.min.js"></script>
+
+<small>Photo from <a href="https://www.epic.com">Epic</a></small>
