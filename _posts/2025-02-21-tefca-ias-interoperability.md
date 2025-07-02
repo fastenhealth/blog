@@ -61,15 +61,15 @@ Health systems & vendors that recognize this – and prioritize both security an
 a different, more thoughtful, approach. Companies like Meditech and Athena Health have publicly committed to supporting 
 Federated Identity, ensuring that patient access isn’t compromised.
 
-| Vendor | Market Share | IAS Federated Identity Support |
-| :---- | :---- | :---- |
-| Epic | 37.7% | No |
-| Oracle Health (Cerner) | 21.7% | – |
-| Meditech  | 13.2% | Yes |
-| Evident (CPSI)  | 9% | – |
-| Altera Digital Health | 3.4% | – |
-| Medhost | 3.3% | – |
-| Athena Health |  | Yes |
+| Vendor | Market Share | IAS Federated Identity Support            |
+| :---- | :---- |:------------------------------------------|
+| Epic | 37.7% | No (Epic supports Facilitated FHIR SOP)   |
+| Oracle Health (Cerner) | 21.7% | –                                         |
+| Meditech  | 13.2% | Yes (100+ customers on Traverse Exchange) |
+| Evident (CPSI)  | 9% | –                                         |
+| Altera Digital Health | 3.4% | –                                         |
+| Medhost | 3.3% | –                                         |
+| Athena Health |  | Yes (all sites)                           |
 
 ### How can we make this better?
 
