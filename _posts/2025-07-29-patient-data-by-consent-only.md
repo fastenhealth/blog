@@ -1,6 +1,6 @@
 ---
 layout: post
-image: 'assets/images/patient-data-by-consent/Fasten CARIN.png'
+image: 'assets/images/patient-data-by-consent/Fasten-CARIN.png'
 title: "Patient Data, By Consent Only"
 date: 2025-07-29 10:18:00
 categories: [  ]
