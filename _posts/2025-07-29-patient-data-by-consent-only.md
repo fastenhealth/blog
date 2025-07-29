@@ -35,11 +35,9 @@ Consumer-directed exchange should empower patients—not expose them. That’s w
 and help operationalize their vision for ethical, interoperable health data access.
 
 
-### Building with patient data? Start with trust.
-
 <br/>
 <div class="alert alert-secondary" role="alert">
     <i class="fa fa-info-circle"></i>
-    <strong>Explore how Fasten Connect supports consent-driven data exchange.</strong><br/>
+    <strong>Building with patient data? Start with trust.</strong><br/>
     Explore how Fasten Connect supports consent-driven data exchange. <a style="color:white; text-decoration: underline; font-weight: bold" href="https://calendly.com/jason-kulatunga/30min">Book a call</a>
 </div>
