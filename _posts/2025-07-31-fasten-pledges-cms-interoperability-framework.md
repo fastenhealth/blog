@@ -42,8 +42,8 @@ Framework.
 > for patients to repeatedly recall and write out their medical history. We are committed to “kill the clipboard,” one 
 > encounter at a time.
 
-We pledged to do what we’ve already been doing for years: make it simple for patients to gain access to their own medical 
-data, and share it with organizations, health care institutions & applications that they trust.
+We pledged to do what we’ve **already** been doing for years: _make it simple for patients to gain access to their own medical 
+data, and share it with organizations, health care institutions & applications that they trust._
 
 Everyone agrees that filling out the same information over and over, every time you visit a clinic is beyond frustrating. 
 The Smart Health Links (eg. QR codes) standard has been around for years, but most PHR apps don’t implement it because most 
