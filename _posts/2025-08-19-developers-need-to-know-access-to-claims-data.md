@@ -8,7 +8,7 @@ tags: [legal, information-blocking]
 author: jason
 ---
 
-Our previous post, [Who's Actually Required to Provide Access to Clinical Data](https://blog.fastenhealth.com/developers-need-to-know-access-to-clinical-data), covered the provider side of healthcare APIs. Now let's complete the picture with **payers**: the insurance companies and government programs that pay for healthcare services.
+Our previous post, [Who's Actually Required to Provide Access to Clinical Data](https://blog.fastenhealth.com/developers-need-to-know-access-to-clinical-data), covered the provider side of healthcare APIs. Now let's complete the picture with payers: the insurance companies and government programs that pay for healthcare services.
 
 If providers hold the clinical story (diagnoses, treatments, outcomes), payers hold the financial story: **claims data** 
 (billing records, coverage decisions, payment history, prior authorization). For developers building comprehensive healthcare apps, 
@@ -21,7 +21,7 @@ when you're building healthcare applications.
 
 ### **So Who Counts as a "Payer"?**
 
-Here's where it gets tricky for developers: **not all payer types have the same API requirements.** Some are federally 
+Here's where it gets tricky for developers: *not all payer types have the same API requirements.* Some are federally 
 mandated while others depend on state law.
 
 | Payer Type                                                              | Patient Access API Required?            | Mandated By                                      |
