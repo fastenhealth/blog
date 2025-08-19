@@ -64,6 +64,6 @@ our focus is on providing access to Clinical data rather than Claims data.
 If you're not sure whether a payer needs to provide API access, or you’ve been told they’re “exempt” without much detail, 
 it may be worth taking a closer look at the actual regulations.
 
-* For the self-guided route: Review [CMS-9115-F](https://www.cms.gov/priorities/key-initiatives/burden-reduction/interoperability/policies-and-regulations/cms-interoperability-and-patient-access-final-rule-cms-9115-f), [CMS-0057-F](https://www.cms.gov/newsroom/fact-sheets/cms-interoperability-and-prior-authorization-final-rule-cms-0057-f), or our [earlier post](https://blog.fastenhealth.com/developers-need-to-know-access-to-clinical-data) on clinical data access.
+* For the self-guided route: Review [CMS-9115-F](https://www.cms.gov/priorities/key-initiatives/burden-reduction/interoperability/policies-and-regulations/cms-interoperability-and-patient-access-final-rule-cms-9115-f), [CMS-0057-F](https://www.cms.gov/priorities/burden-reduction/overview/interoperability/policies-and-regulations/cms-interoperability-and-prior-authorization-final-rule-cms-0057-f/cms-interoperability-and-prior-authorization-final-rule-cms-0057-f), or our [earlier post](https://blog.fastenhealth.com/developers-need-to-know-access-to-clinical-data) on clinical data access.
 
 Need help getting started? [Book a quick consult.](https://calendly.com/jason-kulatunga/30min)
