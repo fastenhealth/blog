@@ -42,8 +42,8 @@ Here's a high level break down:
 
 | Rule | Timeline | Required APIs |
 | :---- | :---- | :---- |
-| [CMS-9115-F](https://www.cms.gov/newsroom/fact-sheets/cms-interoperability-and-prior-authorization-final-rule-cms-0057-f) | In effect now | Patient Access API (claims, encounter, subset of clinical data) Provider Directory API (except QHPs on FFEs) |
-| [CMS-0057-F](https://www.cms.gov/newsroom/fact-sheets/interoperability-and-patient-access-fact-sheet) | Rolling out 2026-2027 | Provider-to-Payer API Payer-to-Payer API Prior Authorization API |
+| [CMS-9115-F](https://www.cms.gov/newsroom/fact-sheets/interoperability-and-patient-access-fact-sheet) | In effect now | Patient Access API (claims, encounter, subset of clinical data) Provider Directory API (except QHPs on FFEs) |
+| [CMS-0057-F](https://www.cms.gov/newsroom/fact-sheets/cms-interoperability-and-prior-authorization-final-rule-cms-0057-f) | Rolling out 2026-2027 | Provider-to-Payer API Payer-to-Payer API Prior Authorization API |
 
 ### **Why Accurate Claims Data Matters**
 
