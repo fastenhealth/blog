@@ -127,7 +127,7 @@ Well, not quite. TEFCA IAS is a huge leap forward, but we're not at the finish l
 <img src="/assets/images/tefca-ias/HIE.png" alt="drawing" width="45%"/>
 <img src="/assets/images/tefca-ias/TEFCA.png" alt="drawing" width="45%"/>
 
-Like many of you, we've been trying to figure out this out for a while. And it feels incredible to finally see that hard work start to pay off.
+Like many of you, we've been trying to figure this out for a while. And it feels incredible to finally see that hard work start to pay off.
 
 In the short term, apps like Fasten will need to support both TEFCA IAS and traditional Patient Access APIs to ensure 
 comprehensive coverage. Until TEFCA participation is universal, there's no getting around that.
