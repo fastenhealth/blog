@@ -9,7 +9,7 @@ author: jason
 ---
 
 
-It’s been just over eight months since our [last technical deep dive into TEFCA Individual Access Services (IAS)](https://blog.fastenhealth.com/tefca-ias-interoperability#mandatory-response-hies--treatment-purpose-of-use). 
+It’s been just over eight months since our [last technical deep dive into TEFCA Individual Access Services (IAS)](https://blog.fastenhealth.com/tefca-ias-interoperability). 
 In earlier posts, we looked broadly at the issues shaping TEFCA’s rollout—from inconsistent OIDC claims to governance gaps 
 and the operational realities of cross-network exchange. This time, we’re narrowing the scope.
 
