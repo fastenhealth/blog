@@ -4,7 +4,7 @@ image: 'assets/images/tefca-ias/interoperability-where-its-headed.webp'
 title: "TEFCA IAS - What Does it Actually Mean for Patients"
 date: 2025-06-17 10:18:00
 categories: [ guidebook  ]
-tags: [tefca, featured, sticky]
+tags: [tefca, featured]
 author: jason
 ---
 
@@ -34,6 +34,7 @@ In practice, here's what they do:
 And here's what it looks like in the real world:
 
 <video
+style="display: block; margin-left: auto; margin-right: auto;"
 class="video-js"
 controls
 preload="auto"
@@ -81,6 +82,7 @@ pull all of your medical records.
 It sounds like the [holy grail](https://brendanjkeeler.medium.com/indiana-jones-and-the-personal-health-record-c9935bdc956d) of interoperability, but what does it actually look like for patients?
 
 <video
+style="display: block; margin-left: auto; margin-right: auto;"
 class="video-js"
 controls
 preload="auto"
