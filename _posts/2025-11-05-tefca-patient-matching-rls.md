@@ -292,7 +292,7 @@ a patient match with high confidence. This is the exact workflow TEFCA IAS was d
 When integrating with TEFCA IAS, one thing that IAS Providers will notice is the lack of an explicit consent process.
 
 Again, this seems to trace back to how HIEs were designed. HIEs were intended to support record exchange between trusted 
-parties. Under HIPAA, records requested for Treatment, Payment & Operations (TPO) do not require explicit consent -- 
+parties. Under HIPAA, records requested for Treatment, Payment & Operations (TPO) by Covered Entities do not require explicit consent -- 
 even though some organizations still have the patient sign a HIE authorization form just in case.
 
 Most requests on the HIE networks are tagged with "[TREATMENT](https://www.commonwellalliance.org/wp-content/uploads/2025/07/Use-Cases-Specification-v4.3-FINAL.pdf)" ([T-TRTMNT](https://rce.sequoiaproject.org/wp-content/uploads/2024/07/SOP-Treatment-XP-Implementation_508.pdf) in TEFCA), meaning they are covered under [HIPAA TPO](https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/disclosures-treatment-payment-health-care-operations/index.html), and are implicitly allowed -- no consent required.
@@ -452,3 +452,4 @@ Finally, a thanks to everyone who reviewed and gave me feedback on this post:
 - Dave Boerner
 - Gene Vestel
 - Jim St.Clair
+- Pryce Ancona
