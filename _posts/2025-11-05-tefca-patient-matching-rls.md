@@ -226,7 +226,7 @@ that is biased towards recent encounters.
 This mismatch around intended use becomes clearer when you look at how some QHINs implement request filtering to minimize 
 network query congestion and RLS usage. We've already observed two common techniques in the wild: Geofencing and Lookback Periods.
 
-Geofencing refers to the use of virtual geographic boundaries to constrain or prioritize the search for patient records 
+> Geofencing refers to the use of virtual geographic boundaries to constrain or prioritize the search for patient records 
 within specific regions or health information exchange (HIE) networks. Essentially, it acts as a digital perimeter—defined 
 by zip codes, states, or organizational jurisdictions—that limits RLS queries to a set of healthcare entities most likely 
 to hold relevant patient data. This approach improves query efficiency, reduces unnecessary network traffic, and strengthens 
@@ -242,7 +242,7 @@ construct their queries. They can send alternative spellings, historical address
 apps cannot. IAS provider apps are locked into CSP-verified demographics, which removes a patient's ability to access a 
 complete medical record, not just recent interactions near their current address.
 
-A lookback period defines how far into the past a system searches for a patient’s records across participating organizations. 
+> A lookback period defines how far into the past a system searches for a patient’s records across participating organizations. 
 It acts as a time filter, limiting queries to recent, relevant encounters
 
 Some QHINs limit responses to a short lookback window. For example, Konza’s default setting only returns records from 
