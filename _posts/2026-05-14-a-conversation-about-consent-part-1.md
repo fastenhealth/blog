@@ -118,7 +118,7 @@ These scopes/permissions are requested by the third party app, consented to by t
 
 ### Persistent Access using Refresh Tokens
 
-There's also a third type of token that we need to discuss, called **Refresh Tokens**. In most situations, ID Tokens are short-lived. They might last an hour or two, and then they expire. They are intended to initiate a user session, when they are actively using an application. Access Tokens usually live longer than that \-- you can imagine countless scenarios where a user may want their app to do work on their behalf, even when they're not in front of a screen. It could be as simple as syncing calendar events to their phone or sending budgeting alerts when some credit card threshold has been crossed.
+There's also a third type of token that we need to discuss, called **Refresh Tokens**. In most situations, ID Tokens are short-lived. They might last an hour or two, and then they expire. They are intended to initiate a user session, when they are actively using an application. Access Tokens usually live longer than that -- you can imagine countless scenarios where a user may want their app to do work on their behalf, even when they're not in front of a screen. It could be as simple as syncing calendar events to their phone or sending budgeting alerts when some credit card threshold has been crossed.
 
 However a long lived Access Token is a security nightmare: they grant access to your sensitive data, and if they are accidentally (or maliciously) exposed, could have the same impact as someone stealing your username & password.
 
@@ -214,7 +214,7 @@ There are 5 different stake-holders here:
     * ensuring that record requests are limited to patient demographics that have been verified by a CSP (by checking the ID Token signature)
     * maintaining a directory of health systems and the patients they've treated (a RLS)
 * CSPs are responsible for:
-    * verifying patient identity to IAL2 (there's a bellybutton\!)
+    * verifying patient identity to IAL2 (there's a bellybutton!)
     * providing accurate & standardized demographics that can be used for patient matching
     * generating an ID Token containing these demographics
     * signing the ID Token with a published keypair, which can be verified by anyone
@@ -275,7 +275,7 @@ A `Rolling 90-Day Refresh` means that the Refresh Token lasts 90 days, however i
 
 > For subsequent connections, Certified Health IT Modules are not required to issue a new refresh token, but must issue a refresh token valid for a new period of no less than three months. Whether the application receives a “new” refresh token is an implementation decision left to the health IT developer, as long as the “refreshed” refresh token is valid for a new period of no less than three months*
 > 
-> source: [https://onc-healthit.github.io/api-resource-guide/g10-criterion/\#subsequent-authentication-authorization-for-single-patient-services](https://onc-healthit.github.io/api-resource-guide/g10-criterion/#subsequent-authentication-authorization-for-single-patient-services)
+> source: [https://onc-healthit.github.io/api-resource-guide/g10-criterion/#subsequent-authentication-authorization-for-single-patient-services](https://onc-healthit.github.io/api-resource-guide/g10-criterion/#subsequent-authentication-authorization-for-single-patient-services)
 
 For patient access APIs, this design helps apps stay connected without forcing patients through repeated login and authorization flows. ONC’s guidance explicitly frames subsequent access as occurring without reauthorization and reauthentication when a valid refresh token is supplied.
 
