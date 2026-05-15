@@ -1,6 +1,6 @@
 ---
 layout: post
-image: 'assets/images/2026-jan-update.png'
+image: 'assets/images/banner.png'
 title: 'We need to have a Conversation about Consent - Part 1'
 date: 2026-05-14 01:18:00
 categories: [ update ]
