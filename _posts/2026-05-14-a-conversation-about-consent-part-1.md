@@ -339,3 +339,13 @@ These are not the same thing, and we must move past the "all or nothing" workflo
 * For IAL2, read [NIST SP 800-63A](https://pages.nist.gov/800-63-3/sp800-63a.html?utm_source=chatgpt.com) which describes how real world evidence can be used to identity proof individuals
 * For TEFCA IAS, review the IAS Exchange Purpose Implementation SOP, especially the sections on CSPs, IAL2 verification, signed OpenID Connect tokens, and required demographic claims. ([TEFCA IAS SOP](https://rce.sequoiaproject.org/wp-content/uploads/2024/08/XP-Implementation-SOP-IAS.pdf))
 * For the 90 day rolling refresh token pattern, ONC’s § 170.315(g)(10) API Resource Guide is the key reference. ([ONC Health IT](https://onc-healthit.github.io/api-resource-guide/g10-criterion/))
+
+---
+
+Finally, a thanks to everyone who reviewed and gave me feedback on this post:
+
+- Alex Dzeda
+- Brendan Keeler
+- Gene Vestel
+- Pryce Ancona
+- Zachary Shelton
