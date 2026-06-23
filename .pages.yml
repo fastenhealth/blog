@@ -17,10 +17,13 @@ content:
   - name: posts
     label: Blog posts
     type: collection
+    operations:
+      rename: false
+      delete: false
     path: _posts
     format: yaml-frontmatter
     filename:
-      template: "{year}-{month}-{day}-{title}.md"
+      template: "{year}-{month}-{day}-{slug}.md"
       field: create
     view:
       fields: [image, title, date, categories, tags, author]
