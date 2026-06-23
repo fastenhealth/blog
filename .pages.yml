@@ -22,7 +22,9 @@ content:
       delete: false
     path: _posts
     format: yaml-frontmatter
-    filename: "{year}-{month}-{day}-{fields.slug}.md"
+    filename:
+      template: "{year}-{month}-{day}-RENAME-ME-LOWERCASE.md"
+      field: create
     view:
       fields: [image, title, date, categories, tags, author]
       primary: title
@@ -42,13 +44,6 @@ content:
         label: Title
         type: string
         required: true
-      - name: slug
-        label: Slug
-        type: string
-        required: true
-        pattern:
-          regex: "^[a-z0-9-]+$"
-          message: "URL slug should only use alphanumeric characters and hyphens."
       - name: date
         label: Publish date
         type: date
