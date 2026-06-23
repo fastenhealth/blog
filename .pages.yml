@@ -23,7 +23,7 @@ content:
     path: _posts
     format: yaml-frontmatter
     filename:
-      template: "{year}-{month}-{day}-{slug}.md"
+      template: "{year}-{month}-{day}-REPLACEME-LOWERCASE.md"
       field: create
     view:
       fields: [image, title, date, categories, tags, author]
