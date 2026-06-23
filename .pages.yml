@@ -22,9 +22,7 @@ content:
       delete: false
     path: _posts
     format: yaml-frontmatter
-    filename:
-      template: "{year}-{month}-{day}-{fields.slug}.md"
-      field: create
+    filename: "{year}-{month}-{day}-{fields.slug}.md"
     view:
       fields: [image, title, date, categories, tags, author]
       primary: title
