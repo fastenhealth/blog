@@ -2,7 +2,7 @@
 layout: post
 title: Fasten’s 𝐁𝐫𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐎𝐰𝐧 𝐈𝐝𝐞𝐧𝐭𝐢𝐭𝐲 capability is now live
 date: 2026-06-23 08:32:00
-image: assets/images/finalbyoi.png
+image: assets/images/finalbyoi-1.png
 categories:
   - update
 author: jason
