@@ -23,6 +23,7 @@ content:
     path: _posts
     format: yaml-frontmatter
     filename:
+      description: "The filename format for new posts. The 'REPLACE-ME-LOWERCASE' placeholder should be replaced with a lowercase version of the post title."
       template: "{year}-{month}-{day}-REPLACE-ME-LOWERCASE.md"
       field: create
     view:
