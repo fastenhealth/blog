@@ -159,4 +159,4 @@ At **Fasten Health**, we’re committed to simplifying this infrastructure and u
 
 If you are not sure which CDR fits your stack, or your integration is getting stuck at the storage layer, let's talk through it. [Schedule a 30-minute chat](https://calendly.com/jason-kulatunga/30min)*.*
 
-Not sure who is legally required to give you FHIR data access in the first place? Start with our earlier post in this series: [Who's Actually Required to Provide Access to Clinical Data?](https://blog.fastenhealth.com/developers-need-to-know-access-to-clinical-data)
+Not sure who is legally required to give you FHIR data access in the first place? Start with our earlier post in this series: [Who's Actually Required to Provide Access to Clinical Data?](https://blog.fastenhealth.com/developers-need-to-know-access-to-clinical-data) 
