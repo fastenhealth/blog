@@ -39,9 +39,7 @@ This is not regular JSON, but rather a complex graph with a schema that evolves 
 
 **FHIR Resource Graph**
 
-![fhir-resource-graph](/assets/images/sql-is-not-enough-for-fhir-data
-
-/fhir-resource-graph.png)
+![fhir-resource-graph](/assets/images/sql-is-not-enough-for-fhir-data/fhir-resource-graph.png)
 
 *FHIR Patient is the root of a reference graph. Pulling one record means resolving a web of linked IDs.*
 
