@@ -12,7 +12,7 @@ You have FHIR data arriving from a provider API, Postgres is already running and
 
 The logic seems completely airtight. You do not need new infrastructure, new skills, or new vendor contracts. Just dump the JSON blob into a JSONB column and query it when you need it. 
 
-This exact thought crosses the mind of almost every health-tech developer building against a ++[FHIR API](https://hl7.org/fhir/)++ for the first time. And almost every one of them eventually hits the same wall.
+This exact thought crosses the mind of almost every health-tech developer building against a [FHIR API](https://hl7.org/fhir/) for the first time. And almost every one of them eventually hits the same wall.
 
 It won't be obvious at first. Ingestion goes smoothly and the first queries return exactly what you expect, but real pain shows up later as data grows and queries get complex. 
 
@@ -39,9 +39,9 @@ This is not regular JSON, but rather a complex graph with a schema that evolves 
 
 **FHIR Resource Graph**
 
-/
+![fhir-resource-graph](/assets/images/sql-is-not-enough-for-fhir-data
 
-*Image Url: ++[https://drive.google.com/file/d/1ZEp_JDVNZw8Icg0OCKIRt0jnSszSR62C/view?usp=drive_link](https://drive.google.com/file/d/1ZEp_JDVNZw8Icg0OCKIRt0jnSszSR62C/view?usp=drive_link)++*
+/fhir-resource-graph.png)
 
 *FHIR Patient is the root of a reference graph. Pulling one record means resolving a web of linked IDs.*
 
@@ -85,7 +85,7 @@ To extract the systolic reading, your JSONB path query looks something like:
 
 This assumes you know exactly where that index sits. But two hospitals rarely organize components the same way. Add in custom extension fields, and your query's reliability drops to near zero across your data sources.
 
-The ++[FHIR Observation resource specification](https://hl7.org/fhir/observation.html)++ alone has over 30 optional fields. Real-world data is inconsistent, as one hospital can include an **interpretation** block while another can bury that same data in an **extension**. Your carefully crafted JSONB path string usually only works for the one institution it was written for.
+The [FHIR Observation resource specification](https://hl7.org/fhir/observation.html) alone has over 30 optional fields. Real-world data is inconsistent, as one hospital can include an **interpretation** block while another can bury that same data in an **extension**. Your carefully crafted JSONB path string usually only works for the one institution it was written for.
 
 ### 3. You will have to backfill
 
@@ -97,7 +97,7 @@ Now you’re running migrations across potentially millions of archived FHIR rec
 
 **Getting Patient Medications: JSONB vs CDR**
 
-*Image Url: ++[https://drive.google.com/file/d/1mfV9C4dO2s4M1pcxQGNSS3ufM_4nQ3pi/view?usp=drive_link](https://drive.google.com/file/d/1mfV9C4dO2s4M1pcxQGNSS3ufM_4nQ3pi/view?usp=drive_link)++*
+![jsonb-vs-cdr](/assets/images/sql-is-not-enough-for-fhir-data/jsonb-vs-cdr.png)
 
 *Both return the same data. One is sustainable.*
 
@@ -111,7 +111,7 @@ This is not a hypothetical edge case. It is the predictable outcome that almost 
 
 **The Accidental CDR: How It Happens?**
 
-*Image Url: ++[https://drive.google.com/file/d/1minxn5Bl2PRwfSgsgToxT0uDLaMKbjGG/view?usp=drive_link](https://drive.google.com/file/d/1minxn5Bl2PRwfSgsgToxT0uDLaMKbjGG/view?usp=drive_link)++*
+![the-accidental-cdr](/assets/images/sql-is-not-enough-for-fhir-data/the-accidental-cdr.png)
 
 *The path from "just store it in JSONB" to "we built a CDR" takes about one quarter. Except that the CDR you built has no community, no documentation, and no one else maintaining it.*
 
@@ -122,9 +122,9 @@ This is not a hypothetical edge case. It is the predictable outcome that almost 
 - **Automatic indexing:** It handles nested fields out of the box. No JSONB path queries or GIN index maintenance required. You search by FHIR parameter, and the CDR knows where to look.
 - **Built-in reference resolution:** Query for a patient's medications, and the CDR resolves the ***Patient → MedicationRequest*** references on read. You get one response, not a web of lookups.
 - **Schema-free versioning:** FHIR R4 and R5 resources can coexist easily. Provider-specific extensions are stored and queryable without schema changes.
-- **FHIR-native search API:** Query using standard ++[FHIR search parameters](https://hl7.org/fhir/search.html)++ instead of writing custom SQL. This interface remains consistent regardless of which CDR you use, which brings us to one of its biggest advantages - ’**Portability**.’
+- **FHIR-native search API:** Query using standard [FHIR search parameters](https://hl7.org/fhir/search.html) instead of writing custom SQL. This interface remains consistent regardless of which CDR you use, which brings us to one of its biggest advantages - ’**Portability**.’
 
-The portability point is a huge win here. CDRs share a consistent query language, much like SQL is the same language whether it runs on Postgres, MySQL, or SQLite. Switching from ++[AWS HealthLake](https://aws.amazon.com/healthlake/)++ to ++[Medplum](https://www.medplum.com/)++ doesn't mean rewriting your logic - it’s just updating a base URL. 
+The portability point is a huge win here. CDRs share a consistent query language, much like SQL is the same language whether it runs on Postgres, MySQL, or SQLite. Switching from [AWS HealthLake](https://aws.amazon.com/healthlake/) to [Medplum](https://www.medplum.com/) doesn't mean rewriting your logic - it’s just updating a base URL. 
 
 You also get compliance features like audit logging and access controls out of the box, rather than bolting them on when a HIPAA audit arrives. It is just not usually on the roadmap until it suddenly becomes urgent.
 
@@ -136,9 +136,9 @@ The CDR market has matured significantly. These are production-tested systems us
 |  |  |  |  |  |
 | ------------------------------------------------------------------------------------------------- | ----------------------- | --------------- | ------------------- | ------------------------------------------------------------- |
 | **CDR** | **Deployment** | **Open Source** | **FHIR Support** | **Best For** |
-| ++[Google Healthcare API](https://cloud.google.com/healthcare-api?hl=en)++ | Managed | No | R4, STU3,DSTU2 | Large-scale clinical data analytics natively on GCP |
-| ++[Azure Health Data Services](https://azure.microsoft.com/en-us/products/health-data-services)++ | Managed | No | R4 | EHR data integration and enterprise ML workflows in Azure |
-| ++[Smile Digital Health](https://www.smiledigitalhealth.com/)++ | Managed and Self-hosted | No | R4, R5, STU3, DSTU2 | Multi-version FHIR compliance and cross-platform data fabrics |
+| [Google Healthcare API](https://cloud.google.com/healthcare-api?hl=en) | Managed | No | R4, STU3,DSTU2 | Large-scale clinical data analytics natively on GCP |
+| [Azure Health Data Services](https://azure.microsoft.com/en-us/products/health-data-services) | Managed | No | R4 | EHR data integration and enterprise ML workflows in Azure |
+| [Smile Digital Health](https://www.smiledigitalhealth.com/) | Managed and Self-hosted | No | R4, R5, STU3, DSTU2 | Multi-version FHIR compliance and cross-platform data fabrics |
 
 
 All three support the standard FHIR search API, so your query logic stays consistent regardless of the underlying server.
@@ -157,8 +157,8 @@ The expensive mistake is choosing simple storage for something that starts as ar
 
 If there is a common theme running through all of this, it is that managing complex clinical data infrastructure comes with a spectrum of heavy technical trade-offs. As standards evolve and real-world implementation improves, we’re finally moving toward a future where accessing health records is as simple as integrating banking APIs.
 
-At **Fasten Health**, we’re committed to simplifying this infrastructure and unlocking the true potential benefits of modern healthcare interoperability. Our platform, ++[Fasten Connect](https://www.fastenhealth.com/about)++, provides a secure, single integration boundary to over 70,000 healthcare systems nationwide to easily feed your dedicated CDR.
+At **Fasten Health**, we’re committed to simplifying this infrastructure and unlocking the true potential benefits of modern healthcare interoperability. Our platform,[Fasten Connect](https://www.fastenhealth.com/about), provides a secure, single integration boundary to over 70,000 healthcare systems nationwide to easily feed your dedicated CDR.
 
-If you are not sure which CDR fits your stack, or your integration is getting stuck at the storage layer, let's talk through it. ++[Schedule a 30-minute chat](https://calendly.com/jason-kulatunga/30min)++*.*
+If you are not sure which CDR fits your stack, or your integration is getting stuck at the storage layer, let's talk through it. [Schedule a 30-minute chat](https://calendly.com/jason-kulatunga/30min)*.*
 
-Not sure who is legally required to give you FHIR data access in the first place? Start with our earlier post in this series: ++[Who's Actually Required to Provide Access to Clinical Data?](https://blog.fastenhealth.com/developers-need-to-know-access-to-clinical-data)++
+Not sure who is legally required to give you FHIR data access in the first place? Start with our earlier post in this series: [Who's Actually Required to Provide Access to Clinical Data?](https://blog.fastenhealth.com/developers-need-to-know-access-to-clinical-data)
