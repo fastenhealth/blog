@@ -18,7 +18,7 @@ It won't be obvious at first. Ingestion goes smoothly and the first queries retu
 
 This post is about where standard SQL stops being enough for FHIR data and what actually works instead.
 
-# What FHIR Data Actually Looks Like?
+# What Is FHIR?
 
 **Fast Healthcare Interoperability Resources (FHIR)** is a standard for representing clinical data as structured JSON objects called resources. That definition sounds simple, but the reality is complex.
 
@@ -43,7 +43,7 @@ This is not regular JSON, but rather a complex graph with a schema that evolves 
 
 *FHIR Patient is the root of a reference graph. Pulling one record means resolving a web of linked IDs.*
 
-# Why JSONB Feels Like the Right Answer?
+# Why Does JSONB Feel Like The Right Answer?
 
 To be fair, Postgres JSONB is a remarkably powerful tool that natively supports GIN indexes, advanced path operators and partial updates without forcing you through a painful, risky schema migration every single week. It handles minor version updates smoothly, so when a new FHIR iteration rolls out, it won't break your existing database columns or force you to sketch out risky backup plans.
 
@@ -55,13 +55,7 @@ The pressure to go this route is also real. Proposing a purpose-built clinical d
 
 ### 1. FHIR is a graph, not a document
 
-A standard query like "give me all active medications for this patient" requires heavy relational mapping. In the FHIR world, that simple request forces you to chase a multi-directional trail.
-
-If a doctor writes a portal refill, your database must resolve a path like this:
-
-***Patient → MedicationRequest → Medication → Organisation.***
-
-However, if that exact same prescription is tied to a specific hospital visit, the clinical graph branches completely differently. Your query must now traverse:
+A standard query like "give me all active medications for this patient" requires heavy relational mapping. In the FHIR world, that simple request forces you to do a follow a complicated chain of nested references.
 
 ***Patient → Encounter → MedicationRequest → Medication → Organization.***  
 
@@ -107,13 +101,13 @@ Here is what usually happens. You store FHIR as raw JSONB. Queries get complex, 
 
 This is not a hypothetical edge case. It is the predictable outcome that almost every team working with FHIR data eventually reaches. In fact, customers will end up building a **poor man's version of a CDR anyway.** 
 
-**The Accidental CDR: How It Happens?**
+**The Accidental CDR**
 
 ![the-accidental-cdr](/assets/images/sql-is-not-enough-for-fhir-data/the-accidental-cdr.png)
 
 *The path from "just store it in JSONB" to "we built a CDR" takes about one quarter. Except that the CDR you built has no community, no documentation, and no one else maintaining it.*
 
-# What a Clinical Data Repository Actually Does
+# What a Clinical Data Repository (CDR) Actually Does
 
 **A Clinical Data Repository (CDR)** is purpose-built storage for FHIR data that handles these headaches natively:
 
@@ -131,12 +125,15 @@ You also get compliance features like audit logging and access controls out of t
 The CDR market has matured significantly. These are production-tested systems used at enterprise scale.
 
 
-|  |  |  |  |  |
-| ------------------------------------------------------------------------------------------------- | ----------------------- | --------------- | ------------------- | ------------------------------------------------------------- |
-| **CDR** | **Deployment** | **Open Source** | **FHIR Support** | **Best For** |
-| [Google Healthcare API](https://cloud.google.com/healthcare-api?hl=en) | Managed | No | R4, STU3,DSTU2 | Large-scale clinical data analytics natively on GCP |
-| [Azure Health Data Services](https://azure.microsoft.com/en-us/products/health-data-services) | Managed | No | R4 | EHR data integration and enterprise ML workflows in Azure |
-| [Smile Digital Health](https://www.smiledigitalhealth.com/) | Managed and Self-hosted | No | R4, R5, STU3, DSTU2 | Multi-version FHIR compliance and cross-platform data fabrics |
+|  |  |  |                     |                                                                              |
+| ------------------------------------------------------------------------------------------------- | ----------------------- | --------------- |---------------------|------------------------------------------------------------------------------|
+| **CDR** | **Deployment** | **Open Source** | **FHIR Support**    | **Best For**                                                                 |
+| [AWS HealthLake](https://aws.amazon.com/healthlake/) | Managed | No | R4                  | Large-scale FHIR ingestion, indexing, and analytics in AWS                   |
+| [Google Healthcare API](https://cloud.google.com/healthcare-api?hl=en) | Managed | No | R4, STU3,DSTU2      | Large-scale clinical data analytics natively on GCP                          |
+| [Azure Health Data Services](https://azure.microsoft.com/en-us/products/health-data-services) | Managed | No | R4                  | EHR data integration and enterprise ML workflows in Azure                    |
+| [Medplum](https://www.medplum.com/) | Managed and Self-hosted | Yes | R4                  | Developer-friendly FHIR backend with extensibility and rapid app development |
+| [HAPI FHIR](https://hapifhir.io/) | Self-hosted | Yes | R4, R4B, R5, DSTU3, | Teams needing a customizable open-source FHIR server. Great for Prototyping  |
+| [Smile Digital Health](https://www.smiledigitalhealth.com/) | Managed and Self-hosted | No | R4, R5, STU3, DSTU2 | Multi-version FHIR compliance and cross-platform data fabrics                |
 
 
 All three support the standard FHIR search API, so your query logic stays consistent regardless of the underlying server.
@@ -147,7 +144,7 @@ Choosing the right storage architecture comes down to how your application inter
 
 Not every use case needs a CDR. If you’re building a pure data pipeline where FHIR records pass through and aren't queried, or you’re storing archival logs, S3 or a simple JSONB column is perfectly reasonable. The same goes for archival storage and audit logs, where you only ever need to retrieve a specific record by its exact ID, not search or traverse it. 
 
-***The rule of thumb:** If you’ll ever need to query, filter, or traverse FHIR data after you**** store it, use a CDR. If you truly just need to store it and never touch it again, S3 or SQL is fine.*
+*The rule of thumb*: **If you’ll ever need to query, filter, or traverse FHIR data after you store it, use a CDR. If you truly just need to store it and never touch it again, S3 or SQL is fine.**
 
 The expensive mistake is choosing simple storage for something that starts as archival but quietly becomes a query engine six months later. Build for the future, not just today.
 
