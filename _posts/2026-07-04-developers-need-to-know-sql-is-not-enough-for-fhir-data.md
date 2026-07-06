@@ -152,7 +152,7 @@ The expensive mistake is choosing simple storage for something that starts as ar
 
 If there is a common theme running through all of this, it is that managing complex clinical data infrastructure comes with a spectrum of heavy technical trade-offs. As standards evolve and real-world implementation improves, we’re finally moving toward a future where accessing health records is as simple as integrating banking APIs.
 
-At **Fasten Health**, we’re committed to simplifying this infrastructure and unlocking the true potential benefits of modern healthcare interoperability. Our platform,[Fasten Connect](https://www.fastenhealth.com/about), provides a secure, single integration boundary to over 70,000 healthcare systems nationwide to easily feed your dedicated CDR.
+At **Fasten Health**, we’re committed to simplifying this infrastructure and unlocking the true potential benefits of modern healthcare interoperability. Our platform, [Fasten Connect](https://www.fastenhealth.com/about), provides a secure, single integration boundary to over 70,000 healthcare systems nationwide to easily feed your dedicated CDR.
 
 If you are not sure which CDR fits your stack, or your integration is getting stuck at the storage layer, let's talk through it. [Schedule a 30-minute chat](https://calendly.com/jason-kulatunga/30min)*.*
 
