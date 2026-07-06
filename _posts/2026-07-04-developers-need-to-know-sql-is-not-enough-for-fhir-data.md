@@ -125,15 +125,15 @@ You also get compliance features like audit logging and access controls out of t
 The CDR market has matured significantly. These are production-tested systems used at enterprise scale.
 
 
-|  |  |  |                     |                                                                              |
-| ------------------------------------------------------------------------------------------------- | ----------------------- | --------------- |---------------------|------------------------------------------------------------------------------|
-| **CDR** | **Deployment** | **Open Source** | **FHIR Support**    | **Best For**                                                                 |
-| [AWS HealthLake](https://aws.amazon.com/healthlake/) | Managed | No | R4                  | Large-scale FHIR ingestion, indexing, and analytics in AWS                   |
-| [Google Healthcare API](https://cloud.google.com/healthcare-api?hl=en) | Managed | No | R4, STU3,DSTU2      | Large-scale clinical data analytics natively on GCP                          |
-| [Azure Health Data Services](https://azure.microsoft.com/en-us/products/health-data-services) | Managed | No | R4                  | EHR data integration and enterprise ML workflows in Azure                    |
-| [Medplum](https://www.medplum.com/) | Managed and Self-hosted | Yes | R4                  | Developer-friendly FHIR backend with extensibility and rapid app development |
-| [HAPI FHIR](https://hapifhir.io/) | Self-hosted | Yes | R4, R4B, R5, DSTU3, | Teams needing a customizable open-source FHIR server. Great for Prototyping  |
-| [Smile Digital Health](https://www.smiledigitalhealth.com/) | Managed and Self-hosted | No | R4, R5, STU3, DSTU2 | Multi-version FHIR compliance and cross-platform data fabrics                |
+|  |  |  |  |  |
+| --------------------------------------------------------------------------------------------- | ----------------------- | --------------- | ------------------- | ---------------------------------------------------------------------------- |
+| **CDR** | **Deployment** | **Open Source** | **FHIR Support** | **Best For** |
+| [AWS HealthLake](https://aws.amazon.com/healthlake/) | Managed | No | R4 | Large-scale FHIR ingestion, indexing, and analytics in AWS |
+| [Google Healthcare API](https://cloud.google.com/healthcare-api?hl=en) | Managed | No | R4, STU3,DSTU2 | Large-scale clinical data analytics natively on GCP |
+| [Azure Health Data Services](https://azure.microsoft.com/en-us/products/health-data-services) | Managed | No | R4 | EHR data integration and enterprise ML workflows in Azure |
+| [Medplum](https://www.medplum.com/) | Managed and Self-hosted | Yes | R4 | Developer-friendly FHIR backend with extensibility and rapid app development |
+| [HAPI FHIR](https://hapifhir.io/) | Self-hosted | Yes | R4, R4B, R5, DSTU3, | Teams needing a customizable open-source FHIR server. Great for Prototyping |
+| [Smile Digital Health](https://www.smiledigitalhealth.com/) | Managed and Self-hosted | No | R4, R5, STU3, DSTU2 | Multi-version FHIR compliance and cross-platform data fabrics |
 
 
 All three support the standard FHIR search API, so your query logic stays consistent regardless of the underlying server.
