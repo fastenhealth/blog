@@ -1,14 +1,17 @@
 ---
 layout: default
 ---
-
-<div class="container">
-<h3 class="font-weight-bold spanborder"><span>{{page.title}}</span></h3>
-<div class="page-content">
-{{ content }}
-<!-- Comments -->
-{% if page.comments == true %}
-{% include comments.html %}
-{% endif %}
-</div>
-</div>
+<section class="standard-page">
+    <div class="narrow-shell">
+        <header class="page-header">
+            <span class="eyebrow">Fasten Health</span>
+            <h1>{{ page.title }}</h1>
+        </header>
+        <div class="page-content article-content">
+            {{ content }}
+        </div>
+        {% if page.comments == true %}
+            {% include comments.html %}
+        {% endif %}
+    </div>
+</section>

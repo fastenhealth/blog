@@ -1,40 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{page.title}} | {{site.name}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <title>{{ page.title | default: site.name }} | {{ site.name }}</title>
 
     {% seo %}
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/{{site.favicon}}">
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-    <!-- Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
-
-    <!-- Bootstrap Modified -->
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
-
-    <!-- Theme Stylesheet -->
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/theme.css">
-
-    <!-- Video.js stylesheet -->
-    <link href="https://vjs.zencdn.net/8.22.0/video-js.css" rel="stylesheet" />
-
-    <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="{{ site.baseurl }}/{{ site.favicon }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubot+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/theme.css?v={{ site.time | date: '%s' }}">
+    <link href="https://vjs.zencdn.net/8.22.0/video-js.css" rel="stylesheet">
 
     {% include tracking-header.html %}
 
-
-    <!-- MailerLite Universal -->
     <script>
         (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
             .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
@@ -42,68 +24,77 @@
         (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
         ml('account', '268156');
     </script>
-    <!-- End MailerLite Universal -->
 </head>
 
-<body class="{% if page.url == "/" %} homefirstpage {% endif %}">
+<body class="{% if page.url == '/' %}home-page{% endif %}">
+    <a class="skip-link" href="#content">Skip to content</a>
 
-    <!-- Navbar -->
-    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="https://www.fastenhealth.com">
-            <img src="{{site.baseurl}}/assets/images/banner.png" alt="{{site.name}}" height="40">
-        </a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbarColor02" style="">
-            <ul class="navbar-nav mr-auto d-flex align-items-center">
-               {% include menu-header.html %}
-            </ul>
-            <ul class="navbar-nav ml-auto d-flex align-items-center">
-                {% include search-lunr.html %}
-            </ul>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="https://www.fastenhealth.com" aria-label="Fasten Health home">
+                <img src="{{ site.baseurl }}/assets/images/banner.png" alt="Fasten" class="brand-logo">
+            </a>
+
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a href="https://docs.connect.fastenhealth.com">Docs</a>
+                <a href="{{ site.baseurl }}/"{% if page.url == '/' %} aria-current="page"{% endif %}>Blog</a>
+                <a href="https://www.fastenhealth.com/about">Company</a>
+                <a href="https://www.fastenhealth.com/faq">FAQ</a>
+                <a href="https://www.fastenhealth.com/directory">Directory</a>
+            </nav>
+
+            <a class="demo-button" href="https://calendly.com/jason-kulatunga/30min">Book a Demo</a>
+
+            <details class="mobile-menu">
+                <summary aria-label="Open navigation"><span></span><span></span><span></span></summary>
+                <nav aria-label="Mobile navigation">
+                    <a href="https://docs.connect.fastenhealth.com">Docs</a>
+                    <a href="{{ site.baseurl }}/">Blog</a>
+                    <a href="https://www.fastenhealth.com/about">Company</a>
+                    <a href="https://www.fastenhealth.com/faq">FAQ</a>
+                    <a href="https://www.fastenhealth.com/directory">Directory</a>
+                    <a href="https://calendly.com/jason-kulatunga/30min">Book a Demo</a>
+                </nav>
+            </details>
         </div>
-    </div>
-    </nav>
+    </header>
 
-    <!-- Search Results -->
-    <div id="lunrsearchresults">
-        <ul class="mb-0"></ul>
-    </div>
-
-    <!-- Content -->
-    <main role="main" class="site-content">
+    <main id="content" class="site-content">
         {{ content }}
     </main>
 
-
-    <!-- Scripts: popper, bootstrap, theme, lunr -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
-    <script src="{{site.baseurl}}/assets/js/theme.js"></script>
-
-
-    <!-- Footer -->
-    <footer class="bg-white border-top p-3 text-muted small">
-        <div class="container">
-        <div class="row align-items-center justify-content-between">
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="{{ site.baseurl }}/assets/images/banner.png" alt="Fasten" class="footer-logo">
+                <p>Infrastructure for patient-directed health information exchange.</p>
+            </div>
             <div>
-                <span class="navbar-brand mr-2 mb-0"><img src="{{site.baseurl}}/assets/images/banner.png" height="40"/></span>
-                <span>Copyright © <script>document.write(new Date().getFullYear())</script>.</span>
-
-                <!--  Github Repo Star Btn-->
-                <a class="text-dark ml-1" target="_blank" href="https://github.com/fastenhealth/docs"><i class="fab fa-github"></i> Fork on Github</a>
-
+                <h2>Resources</h2>
+                <a href="https://docs.connect.fastenhealth.com">Documentation</a>
+                <a href="{{ site.baseurl }}/">Blog</a>
+                <a href="https://www.fastenhealth.com/directory">Directory</a>
+            </div>
+            <div>
+                <h2>Company</h2>
+                <a href="https://www.fastenhealth.com/about">About</a>
+                <a href="https://www.fastenhealth.com/faq">FAQ</a>
+                <a href="{{ site.baseurl }}/contact.html">Contact</a>
+            </div>
+            <div>
+                <h2>Legal</h2>
+                <a href="https://policy.fastenhealth.com/privacy_policy">Privacy</a>
+                <a href="https://policy.fastenhealth.com/terms">Terms</a>
+                <a href="https://github.com/fastenhealth">GitHub</a>
             </div>
         </div>
+        <div class="footer-meta">
+            <span>&copy; {{ 'now' | date: '%Y' }} Fasten Health, Inc.</span>
+            <a href="mailto:hello@fastenhealth.com">hello@fastenhealth.com</a>
         </div>
     </footer>
 
+    <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
     {% include tracking-footer.html %}
-
 </body>
-
 </html>
