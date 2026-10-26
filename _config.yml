@@ -106,6 +106,7 @@ exclude:
   - vendor
   - .travis.yml
   - node_modules
+  - reference
   - .git
 
 
