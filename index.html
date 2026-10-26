@@ -14,6 +14,11 @@ description: "Ideas, technical guides, and updates from Fasten Health."
     <div class="shell">
         <a class="featured-link" href="{{ site.baseurl }}{{ featured_post.url }}">
             <article class="featured-post">
+                {% if featured_post.image %}
+                <div class="featured-media">
+                    <img src="{% if featured_post.image contains '://' %}{{ featured_post.image }}{% else %}{{ site.baseurl }}/{{ featured_post.image }}{% endif %}" alt="{{ featured_post.title }}">
+                </div>
+                {% endif %}
                 <div class="featured-copy">
                     <div>
                         {% if featured_post.categories.size > 0 %}
@@ -33,11 +38,6 @@ description: "Ideas, technical guides, and updates from Fasten Health."
                         <time datetime="{{ featured_post.date | date_to_xmlschema }}">{{ featured_post.date | date: '%b %d, %Y' }}</time>
                     </div>
                 </div>
-                {% if featured_post.image %}
-                <div class="featured-media">
-                    <img src="{% if featured_post.image contains '://' %}{{ featured_post.image }}{% else %}{{ site.baseurl }}/{{ featured_post.image }}{% endif %}" alt="{{ featured_post.title }}">
-                </div>
-                {% endif %}
             </article>
         </a>
     </div>

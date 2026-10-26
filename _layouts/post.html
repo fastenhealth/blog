@@ -31,13 +31,6 @@ layout: default
     </header>
 
     <div class="article-shell">
-        <aside class="article-aside">
-            <span>Written by</span>
-            <strong>{{ author.name }}</strong>
-            {% if author.bio %}<p>{{ author.bio }}</p>{% endif %}
-            {% if author.linkedin %}<a href="{{ author.linkedin }}">LinkedIn</a>{% endif %}
-        </aside>
-
         <div>
             <div class="article-content">
                 {{ content }}
