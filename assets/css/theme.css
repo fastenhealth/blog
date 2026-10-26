@@ -292,6 +292,8 @@ button {
   border-radius: 1.5rem;
   background: linear-gradient(135deg, #f5f4ff 0%, #f8fafb 70%);
   overflow: hidden;
+  margin-left: 6rem;
+  margin-right: 6rem;
 }
 
 .featured-copy {
@@ -314,7 +316,7 @@ button {
   margin: 0.65rem 0 1rem;
   color: var(--heading);
   font-family: "Hubot Sans", Inter, sans-serif;
-  font-size: clamp(2.35rem, 3.3vw, 3.5rem);
+  font-size: 2.35rem;
   font-weight: 700;
   letter-spacing: -0.045em;
   line-height: 1.04;
@@ -601,7 +603,7 @@ button {
 
 .article-hero h1 {
   max-width: 760px;
-  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-size: 2.5rem;
 }
 
 .article-byline {
@@ -609,7 +611,6 @@ button {
 }
 
 .article-hero-media {
-  aspect-ratio: 4 / 3;
   overflow: hidden;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
