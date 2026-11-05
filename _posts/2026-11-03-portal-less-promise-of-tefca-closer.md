@@ -28,9 +28,9 @@ We're on the cusp of that portal-less future.
 
 So for those of you following along, here's a quick timeline of Epic Nexus on TEFCA IAS:
 
-- March 2025: Fasten became one of the first IAS applications to retrieve medical records from Epic Nexus in production.
-- July 2025: Epic announced MyChart Central and Epic ID, giving patients a single login for their linked MyChart accounts.
-- October 2026: Epic ID supported on TEFCA for IAS apps. Patients using the Fasten widget can authorize all their linked healthcare institutions to share their records with just a single portal login! 🎉
+- **March 2025:** Fasten became one of the first IAS applications to retrieve medical records from Epic Nexus in production.
+- **July 2025:** Epic announced MyChart Central and Epic ID, giving patients a single login for their linked MyChart accounts.
+- **October 2026:** Epic ID supported on TEFCA for IAS apps. Patients using the Fasten widget can authorize all their linked healthcare institutions to share their records with just a single portal login! 🎉
 
 There is an important caveat: this experience is currently available only for Epic sites running Epic’s August 2026 release.
 
