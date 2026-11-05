@@ -71,5 +71,5 @@ app, authorize access, and retrieve their own records.
 
 <div class="alert alert-secondary" role="alert">
 <i class="fa fa-info-circle"></i>
-If you're a patient-facing organization that's overwhelmed by the difficulty registering your application with an EHR or Health System -- <a style="color:white; text-decoration: underline; font-weight: bold" href="https://calendly.com/jason-kulatunga/30min">please reach out</a>.
+If you're a patient-facing organization that's overwhelmed by the difficulty registering your application with an EHR or Health System -- <a style="color:white; text-decoration: underline; font-weight: bold" href="https://calendly.com/fastenhealth/book-intro">please reach out</a>.
 </div>

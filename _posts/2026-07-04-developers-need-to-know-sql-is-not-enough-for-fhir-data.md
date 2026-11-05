@@ -154,6 +154,6 @@ If there is a common theme running through all of this, it is that managing comp
 
 At **Fasten Health**, we’re committed to simplifying this infrastructure and unlocking the true potential benefits of modern healthcare interoperability. Our platform, [Fasten Connect](https://www.fastenhealth.com/about), provides a secure, single integration boundary to over 70,000 healthcare systems nationwide to easily feed your dedicated CDR.
 
-If you are not sure which CDR fits your stack, or your integration is getting stuck at the storage layer, let's talk through it. [Schedule a 30-minute chat](https://calendly.com/jason-kulatunga/30min)*.*
+If you are not sure which CDR fits your stack, or your integration is getting stuck at the storage layer, let's talk through it. [Schedule a 30-minute chat](https://calendly.com/fastenhealth/book-intro)*.*
 
 Not sure who is legally required to give you FHIR data access in the first place? Start with our earlier post in this series: [Who's Actually Required to Provide Access to Clinical Data?](https://blog.fastenhealth.com/developers-need-to-know-access-to-clinical-data) 

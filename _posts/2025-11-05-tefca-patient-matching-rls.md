@@ -439,7 +439,7 @@ Fasten Health is completely committed to TEFCA, and the potential benefits. We'r
 <div class="alert alert-secondary" role="alert">
     <i class="fa fa-info-circle"></i>
     If your team wants to go deeper, 
- <a style="color:white; text-decoration: underline; font-weight: bold" href="https://calendly.com/jason-kulatunga/30min">please get in touch</a>.
+ <a style="color:white; text-decoration: underline; font-weight: bold" href="https://calendly.com/fastenhealth/book-intro">please get in touch</a>.
 </div>
 
 Reach out and we can walk through the details, roadmaps, and what this means for your workflows. Or, if you prefer to try it first, sign up for the [TEFCA IAS Network Test](https://docs.google.com/forms/d/e/1FAIpQLSdPIl6Yigih_nckbZVxRyXseHlhsZaf31nBIr57R0VqwtTgeQ/viewform) form and experience the IAS flow for yourself\!

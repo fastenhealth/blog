@@ -143,7 +143,7 @@ the backend plumbing.
 <div class="alert alert-secondary" role="alert">
     <i class="fa fa-info-circle"></i>
     <strong>Want to learn more about TEFCA IAS and Patient Access APIs?</strong><br/>
-    Let’s talk. <a style="color:white; text-decoration: underline; font-weight: bold" href="https://calendly.com/jason-kulatunga/30min">Book time</a> to explore Fasten Health's unified API
+    Let’s talk. <a style="color:white; text-decoration: underline; font-weight: bold" href="https://calendly.com/fastenhealth/book-intro">Book time</a> to explore Fasten Health's unified API
 </div>
 
 <script src="https://vjs.zencdn.net/8.22.0/video.min.js"></script>

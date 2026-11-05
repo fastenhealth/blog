@@ -38,5 +38,5 @@ Instead of forcing businesses to integrate separately with multiple EHRs, Fasten
 <div class="alert alert-secondary" role="alert">
     <i class="fa fa-info-circle"></i>
     <strong>Dealing with API approval delays? Let’s talk.</strong><br/>
-    <a style="color:white; text-decoration: underline; font-weight: bold" href="https://calendly.com/jason-kulatunga/30min">Book time</a> to discuss your experience and explore how Fasten can simplify the process
+    <a style="color:white; text-decoration: underline; font-weight: bold" href="https://calendly.com/fastenhealth/book-intro">Book time</a> to discuss your experience and explore how Fasten can simplify the process
 </div>

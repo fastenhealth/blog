@@ -39,5 +39,5 @@ and help operationalize their vision for ethical, interoperable health data acce
 <div class="alert alert-secondary" role="alert">
     <i class="fa fa-info-circle"></i>
     <strong>Building with patient data? Start with trust.</strong><br/>
-    Explore how Fasten Connect supports consent-driven data exchange. <a style="color:white; text-decoration: underline; font-weight: bold" href="https://calendly.com/jason-kulatunga/30min">Book a call</a>
+    Explore how Fasten Connect supports consent-driven data exchange. <a style="color:white; text-decoration: underline; font-weight: bold" href="https://calendly.com/fastenhealth/book-intro">Book a call</a>
 </div>

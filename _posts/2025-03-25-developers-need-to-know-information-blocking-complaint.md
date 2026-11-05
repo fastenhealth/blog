@@ -140,7 +140,7 @@ to avoid lengthy complaint processes and instead focus on a simple turnkey API f
 <div class="alert alert-secondary" role="alert">
     <i class="fa fa-info-circle"></i>
     <strong>Have you encountered API integration roadblocks? </strong><br/>
-    Let's address these challenges together -- <a style="color:white; text-decoration: underline; font-weight: bold" href="https://calendly.com/jason-kulatunga/30min">book time with our team</a>.
+    Let's address these challenges together -- <a style="color:white; text-decoration: underline; font-weight: bold" href="https://calendly.com/fastenhealth/book-intro">book time with our team</a>.
 </div>
 
 ## Links to ONC Resources:

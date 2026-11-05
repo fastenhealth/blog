@@ -61,7 +61,7 @@ If your integration is stuck, chances are we’ve already encountered something 
 <div class="alert alert-secondary" role="alert">
     <i class="fa fa-info-circle"></i>
     <strong>Need help moving forward?</strong><br/>
-   <a style="color:white; text-decoration: underline; font-weight: bold" href="https://calendly.com/jason-kulatunga/30min">Lets schedule a chat</a>.
+   <a style="color:white; text-decoration: underline; font-weight: bold" href="https://calendly.com/fastenhealth/book-intro">Lets schedule a chat</a>.
 </div>
 
 # What’s Next?
