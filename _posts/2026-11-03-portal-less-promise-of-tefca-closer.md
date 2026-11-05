@@ -16,6 +16,8 @@ to share their medical records with Fasten -- all in a single experience.
 This addresses one of the biggest sources of patient friction in TEFCA -- one that patients have been complaining about 
 for years.
 
+![epic-id-epic-nexus.png](assets/images/portal-less-promise-of-tefca-closer/epic-id-epic-nexus.png)
+
 Fasten was one of the first IAS Providers to connect to TEFCA in early 2025. From the beginning, patients retrieving records
 from Epic health systems had to complete identity proofing and then sign in again to each organization’s patient portal. 
 Unfortunately, this made the TEFCA experience more burdensome than connecting directly through traditional SMART-on-FHIR 
@@ -33,6 +35,8 @@ So for those of you following along, here's a quick timeline of Epic Nexus on TE
 - **October 2026:** Epic ID supported on TEFCA for IAS apps. Patients using the Fasten widget can authorize all their linked healthcare institutions to share their records with just a single portal login! 🎉
 
 There is an important caveat: this experience is currently available only for Epic sites running Epic’s August 2026 release.
+
+![epic-your-version-is-showing.png](assets/images/portal-less-promise-of-tefca-closer/epic-your-version-is-showing.png)
 
 Brendan Keeler's ["Your Version Is Showing"](https://healthapiguy.substack.com/p/your-version-is-showing) post dives into 
 the nitty-gritty details, but suffice it to say that most of Epic's health system customers will be rolling onto the August 
