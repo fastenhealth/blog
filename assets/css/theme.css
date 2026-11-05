@@ -699,6 +699,46 @@ button {
   color: var(--primary);
 }
 
+.article-content .alert {
+  margin: 1.75rem 0;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0.9rem;
+}
+
+.article-content .alert-secondary {
+  color: #fff;
+  background: var(--primary);
+  box-shadow: 0 12px 30px rgba(57, 44, 157, 0.16);
+}
+
+.article-content .alert-secondary .fa-info-circle {
+  display: inline-grid;
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-right: 0.45rem;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  place-items: center;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: -0.15rem;
+}
+
+.article-content .alert-secondary .fa-info-circle::before {
+  content: "i";
+}
+
+.article-content .alert-secondary a,
+.article-content .alert-secondary a:hover,
+.article-content .alert-secondary a:visited {
+  color: #fff;
+  text-decoration-color: rgba(255, 255, 255, 0.7);
+}
+
 .article-content strong {
   color: var(--heading);
 }
